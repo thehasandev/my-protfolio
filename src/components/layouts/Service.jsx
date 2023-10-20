@@ -13,10 +13,10 @@ import ServiceList from '../common/ServiceList'
 
 function Service() {
   return (
-    <section className='my-[120px]'> 
+    <section className='md:my-[120px] my-[80px]'> 
       <Container>
       <h2 className='font-dm font-bold text-secondary mb-8 text-[30px] text-center'>My Service</h2>
-       <div className='flex flex-wrap gap-16 justify-center'>
+       <div className='flex flex-wrap md:gap-16  gap-5 justify-center'>
          <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
             <div className='w-8 mx-auto'>
               <Image src={Uixi}/>

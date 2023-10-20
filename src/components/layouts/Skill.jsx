@@ -59,8 +59,8 @@ function Skill() {
 
                <div className='md:w-[40%] '>
                   <div className='flex md:gap-x-10 gap-x-5 items-center mb-5'>
-                    <h2 className='font-dm font-bold text-secondary text-lg lg:text-[30px]'>My Skills</h2>
-                      <input type="text" placeholder='Search in skill...' onChange={handleChange} className='border boreder-secondary px-5 py-2 rounded-[5px] w-[200px] placeholder:text-sm placeholder:font-dm placeholder:text-secodary'/>
+                    <h2 className='font-dm font-bold text-secondary text-lg  lg:text-[30px]'>My Skills</h2>
+                      <input type="text" placeholder='Search in skill...' onChange={handleChange} className='border boreder-secondary px-5 py-2 rounded-[5px] md:w-[180px] placeholder:text-sm placeholder:font-dm placeholder:text-secodary'/>
                     </div>
                 
                <ul className='flex gap-x-5 my-4 items-center'>
