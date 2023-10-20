@@ -12,11 +12,11 @@ import Image from '../common/Image';
 import Man from "../../assets/git.png"
 function Hero() {
   return (
-    <section className='py-[140px]'>
+    <section className='md:py-[140px] py-[80px] '>
         <Container>
-            <Flex className="justify-center items-center">
-                <div className='w-[50%]'>
-                    <h1 className='font-dm font-bold w-[450px] text-3xl text-primary'>HI I'M MOHAMMED HASAN. I AM A    <TypeAnimation
+            <Flex className="flex-col-reverse gap-y-10 md:flex-row justify-center items-center">
+                <div className='md:w-[50%] md:mx-0 mx:auto '>
+                    <h1 className='font-dm font-bold md:w-[450px] px-4 md:px-0 w-[358px] mx-auto md:mx-0 md:text-3xl text-xl text-primary'>HI I'M MOHAMMED HASAN. I AM A    <TypeAnimation
                         sequence={[
                             'FRONT END DEVELOPER ',
                             1000,
@@ -29,14 +29,14 @@ function Hero() {
                         ]}
                             wrapper="span"
                             speed={50}
-                            className=' font-dm font-bold text-3xl inline-block text-primary text-center leading-[70px'
+                            className=' font-dm font-bold md:text-3xl inline-block text-xl text-primary text-center leading-[70px'
             
                             repeat={Infinity}
                     /></h1>
                 
-                    <p className='font-dm font-medium my-5 w-[400px]  text-lg text-secondary'>As a frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js</p>
+                    <p className='font-dm font-medium my-5 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-secondary'>As a frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js</p>
                     
-                    <Flex className="w-[360px] justify-between">
+                    <Flex className="md:w-[360px] justify-between">
                         <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
                             <AiFillGithub size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'>Github</p>
                         </div>
@@ -51,8 +51,9 @@ function Hero() {
 
                 </div>
 
-                <div className='w-[30%]'>
-                    <div className='w-[250px] '>
+
+                <div className='md:w-[30%] md:mx-0 mx-auto'>
+                    <div className='w-[250px] mx-auto md:mx-0'>
                     <Image src={Man} className="rounded-full"/>
                     </div>
                 </div>
