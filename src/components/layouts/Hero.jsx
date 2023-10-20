@@ -16,7 +16,7 @@ function Hero() {
         <Container>
             <Flex className="flex-col-reverse gap-y-10 md:flex-row justify-center items-center">
                 <div className='md:w-[50%] md:mx-0 mx:auto '>
-                    <h1 className='font-dm font-bold md:w-[450px] px-4 md:px-0 w-[358px] mx-auto md:mx-0 md:text-3xl text-xl text-primary'>HI I'M MOHAMMED HASAN. I AM A    <TypeAnimation
+                    <h1 className='font-dm font-bold md:w-[450px] px-4 md:px-0 w-[360px] mx-auto md:mx-0 md:text-3xl text-xl text-primary'>HI I'M MOHAMMED HASAN. I AM A    <TypeAnimation
                         sequence={[
                             'FRONT END DEVELOPER ',
                             1000,

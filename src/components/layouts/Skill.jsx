@@ -45,23 +45,23 @@ function Skill() {
 
 
   return (
-    <section className='mt-10'>
+    <section className='md:mt-10'>
         <Container>
-            <Flex className='justify-between'>
-               <div className='w-[40%] '>
+            <Flex className='justify-between flex-col md:flex-row px-4 xl:px-0 gap-y-10'>
+               <div className='md:w-[40%] '>
                   <h2 className='font-dm font-bold text-secondary text-[30px]'>Summary</h2> 
-                  <p className='font-dm font-medium text-secondary text-base mt-5'>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
-                  <Flex className="gap-x-2 items-center mt-5">
+                  <p className='font-dm font-normal md:font-medium text-secondary text-sm md:text-base mt-5'>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
+                  <Flex className="gap-x-2 items-center justify-center md:justify-start mt-5">
                     <AiFillGithub size={40} className='text-primary'/>
                     <BiLogoLinkedinSquare size={40} className='text-primary'/>
                   </Flex>
                </div>
 
-               <div className='w-[40%] '>
-                <div className='flex gap-x-10  mb-5'>
-                 <h2 className='font-dm font-bold text-secondary text-[30px]'>My Skills</h2>
-                  <input type="text" placeholder='Search in skill...' onChange={handleChange} className='border boreder-secondary px-5 py-2 rounded-[5px] w-[200px] placeholder:text-sm placeholder:font-dm placeholder:text-secodary'/>
-                </div>
+               <div className='md:w-[40%] '>
+                  <div className='flex md:gap-x-10 gap-x-5 items-center mb-5'>
+                    <h2 className='font-dm font-bold text-secondary text-lg lg:text-[30px]'>My Skills</h2>
+                      <input type="text" placeholder='Search in skill...' onChange={handleChange} className='border boreder-secondary px-5 py-2 rounded-[5px] w-[200px] placeholder:text-sm placeholder:font-dm placeholder:text-secodary'/>
+                    </div>
                 
                <ul className='flex gap-x-5 my-4 items-center'>
         
