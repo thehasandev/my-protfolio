@@ -32,29 +32,29 @@ function Protfolio() {
    
   }
   return (
-    <section className='py-[120px] bg-white'>
+    <section className='md:py-[120px] py-[80px] bg-white'>
       <Container>
       <h2 className='font-dm font-bold text-center text-secondary text-[30px] mb-5'>My Protfolio </h2> 
-         <ul className='flex justify-center gap-x-10'>
-            <li onClick={()=>{handleSubmit("Html Css")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+         <ul className='flex  justify-center md:gap-x-10 gap-x-2 flex-wrap'>
+            <li onClick={()=>{handleSubmit("Html Css")}} className='font-dm text-base hover:bg-secondary hover:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                Html Css
             </li>
-            <li onClick={()=>{handleSubmit("Bootstrap")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("Bootstrap")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                Bootstrap
             </li>
-            <li onClick={()=>{handleSubmit("Taillwind Css")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("Taillwind Css")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                 Taillwind Css
             </li>
-            <li onClick={()=>{handleSubmit("Javascript")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("Javascript")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                 Javascript
             </li>
-            <li onClick={()=>{handleSubmit("React Js")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("React Js")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                 React Js
             </li>
-            <li onClick={()=>{handleSubmit("Game")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3  cursor-pointer py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("Game")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2 md:px-3  cursor-pointer py-1 duration-300 rounded-[5px]'>
                 Game 
             </li>
-            <li onClick={()=>{handleSubmit("")}} className='font-dm text-base hover:bg-secondary hover:text-white px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
+            <li onClick={()=>{handleSubmit("")}} className='font-dm text-base hover:bg-secondary hover:text-white px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                 All
             </li>
          </ul>
