@@ -10,6 +10,7 @@ import {BiLogoLinkedinSquare} from "react-icons/bi"
 import {MdEmail} from "react-icons/md"
 import Image from '../common/Image';
 import Man from "../../assets/git.png"
+import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section className='md:py-[140px] py-[80px] ' id='home'>
@@ -37,15 +38,25 @@ function Hero() {
                     <p className='font-dm font-medium my-5 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-secondary'>As a frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js</p>
                     
                     <Flex className="md:w-[360px] justify-between">
+                    <Link to='https://github.com/thehasandev'>
                         <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
                             <AiFillGithub size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'>Github</p>
                         </div>
-                        <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
-                            <BiLogoLinkedinSquare size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'>Linkin</p>
-                        </div>
-                        <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
-                            <MdEmail size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'>Email</p>
-                        </div>
+
+                    </Link>
+                        <Link to='https://www.linkedin.com/in/hasanmia/'>
+                            <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
+                            
+                                <BiLogoLinkedinSquare size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'> Linkin </p>
+                            
+                            </div>
+                        </Link>
+
+                        <Link to="mailto:theahasandev@gmail.com">
+                            <div className='bg-secondary hover:bg-primary duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2'>
+                                <MdEmail size={25} className='text-white'/><p className='font-dm font-medium text-lg inline-block text-white text-center'>Email</p>
+                            </div>
+                        </Link>
                     
                     </Flex>
 

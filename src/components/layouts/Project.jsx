@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import PrevArrow from '../common/PrevArrow'
 import NextArrow from '../common/NextArrow'
+import { Link } from 'react-router-dom'
 
 function Project() {
     const settings = {
@@ -43,8 +44,12 @@ function Project() {
 
                      <div className='w-full h-full bg-black/70 absolute    group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'> </div>
                      <div className='w-full h-full  absolute duration-500   group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'>
-                        <p className='font-dm font-medium text-white text-lg '>View Code</p>
-                        <p className='font-dm font-medium text-white text-lg '>Live Project</p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://github.com/thehasandev/ecommerce-orebi.git">View Code</Link>
+                        </p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://ecommerce-orebi.netlify.app/">Live Project</Link>
+                        </p>
                      </div>
                    </div>
 
@@ -77,22 +82,26 @@ function Project() {
 
 
                         <Flex className="justify-center gap-x-4 pt-8 ">
-                            <Flex className='items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Code</p>
-                                <AiFillGithub size={30}/>
-                            </Flex>
+                                <Link to="https://github.com/thehasandev/ecommerce-orebi.git">
+                                    <Flex className='items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Code</p>
+                                        <AiFillGithub size={30}/>
+                                    </Flex>
+                                </Link>
 
-                            <Flex className=' items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
-                                <FiExternalLink size={25}/>
-                            </Flex>
-                        
+                                <Link to="https://ecommerce-orebi.netlify.app/">
+                                    <Flex className=' items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
+                                        <FiExternalLink size={25}/>
+                                    </Flex>
+                                </Link>
                         </Flex>
 
                     </div>
                    </div>
                 </Flex>
              </div>
+
              <div className='md:w-full  bg-white shadow-xl shadow-gray-400/20  px-8 pt-8 md:pb-[140px] rounded-[5px]'>
                 <Flex className="justify-between gap-y-5 flex-col md:flex-row">
                    <div className='md:w-[40%] relative overflow-hidden group'>
@@ -103,8 +112,12 @@ function Project() {
 
                      <div className='w-full h-full bg-black/70 absolute    group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'> </div>
                      <div className='w-full h-full  absolute duration-500   group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'>
-                        <p className='font-dm font-medium text-white text-lg '>View Code</p>
-                        <p className='font-dm font-medium text-white text-lg '>Live Project</p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://github.com/thehasandev/daraz.git">View Code</Link>
+                        </p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://daraz-ecommarce.netlify.app">Live Project</Link>
+                        </p>
                      </div>
                    </div>
 
@@ -137,15 +150,19 @@ function Project() {
 
 
                         <Flex className="justify-center gap-x-4 pt-8 ">
-                            <Flex className='items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Code</p>
-                                <AiFillGithub size={30}/>
-                            </Flex>
+                                <Link to="https://github.com/thehasandev/daraz.git">
+                                    <Flex className='items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Code</p>
+                                        <AiFillGithub size={30}/>
+                                    </Flex>
+                                </Link>
 
-                            <Flex className=' items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
-                                <FiExternalLink size={25}/>
-                            </Flex>
+                                <Link to="https://daraz-ecommarce.netlify.app">
+                                    <Flex className=' items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
+                                        <FiExternalLink size={25}/>
+                                    </Flex>
+                                </Link>
                         
                         </Flex>
 
@@ -153,6 +170,7 @@ function Project() {
                    </div>
                 </Flex>
              </div>
+
              <div className='md:w-full  bg-white shadow-xl shadow-gray-400/20  px-8 pt-8 md:pb-[140px] rounded-[5px]'>
                 <Flex className="justify-between gap-y-5 flex-col md:flex-row">
                    <div className='md:w-[40%] relative overflow-hidden group'>
@@ -163,8 +181,12 @@ function Project() {
 
                      <div className='w-full h-full bg-black/70 absolute    group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'> </div>
                      <div className='w-full h-full  absolute duration-500   group-hover:top-0 top-[100%] left-0 flex items-center justify-center gap-x-5'>
-                        <p className='font-dm font-medium text-white text-lg '>View Code</p>
-                        <p className='font-dm font-medium text-white text-lg '>Live Project</p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://github.com/thehasandev/bangle-fourse.git">View Code</Link>
+                        </p>
+                        <p className='font-dm font-medium text-white text-lg '>
+                            <Link to="https://security-gurd.netlify.app">Live Project</Link>
+                        </p>
                      </div>
                    </div>
 
@@ -197,15 +219,19 @@ function Project() {
 
 
                         <Flex className="justify-center gap-x-4 pt-8 ">
-                            <Flex className='items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Code</p>
-                                <AiFillGithub size={30}/>
-                            </Flex>
+                               <Link to="https://github.com/thehasandev/bangle-fourse.git">
+                                    <Flex className='items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Code</p>
+                                        <AiFillGithub size={30}/>
+                                    </Flex>
+                                </Link>
 
-                            <Flex className=' items-center gap-x-2'>
-                                <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
-                                <FiExternalLink size={25}/>
-                            </Flex>
+                                <Link to="https://security-gurd.netlify.app">
+                                    <Flex className=' items-center gap-x-2'>
+                                        <p className='font-dm font-medium font-base text-primary'>Live Demo</p>
+                                        <FiExternalLink size={25}/>
+                                    </Flex>
+                                </Link>
                         
                         </Flex>
 

@@ -63,7 +63,7 @@ function Protfolio() {
       
           
           
-        <Flex className="gap-10 flex-wrap justify-center mt-6">
+        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[400px] overflow-y-scroll">
 
           {
             filterProtfolio.length ?
@@ -72,7 +72,7 @@ function Protfolio() {
               const {title} = item
               console.log(title);
              
-         return <div key={index}>
+         return <div key={index} >
                   <div className='w-[350px] group scale-105 group overflow-hidden relative rounded-[10px]'>
                     <Link to={title=="avada" ? "https://hasan-adava.netlify.app" : title=="discover" ? "https://hasan-natural.netlify.app" : title=="omah"? "https://omah-website.netlify.app" :title=="creative"? "https://thehasandev.github.io/creativeit/":title=="innovate"? "https://react-multiple-pages-website.netlify.app" :title=="charger"?"https://hasan-charger.netlify.app" : title=="daraz"? "https://daraz-ecommarce.netlify.app": title=="Orabai"? "https://ecommerce-orebi.netlify.app/" : title=="eduford"? "https://college-htmlcss.netlify.app": title=="waxom"? "https://waxxom.netlify.app" : title == "you tube" ? "https://dashing-clafoutis-ca5a45.netlify.app" : title == "sequrity" ? "https://security-gurd.netlify.app" : title == "todo" ? "https://react-facebook-todo.netlify.app" : title == "game"? "https://react-game-twoplayers.netlify.app" : title == "table search" ? "https://table-search-react.netlify.app":"/"}>
                        <Image src={item.url} className="rounded-[10px] group-hover:scale-110 duration-500"/>
