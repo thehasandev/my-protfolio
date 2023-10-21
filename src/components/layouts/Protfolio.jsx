@@ -32,7 +32,7 @@ function Protfolio() {
    
   }
   return (
-    <section className='md:py-[120px] py-[80px] bg-white'>
+    <section className='md:py-[120px] py-[80px] bg-white' id='protfolio'>
       <Container>
       <h2 className='font-dm font-bold text-center text-secondary text-[30px] mb-5'>My Protfolio </h2> 
          <ul className='flex  justify-center md:gap-x-10 gap-x-2 flex-wrap'>

@@ -7,6 +7,7 @@ import List from '../common/List'
 import Button from '../common/Button'
 import Image from '../common/Image'
 import {AiOutlineMenu} from "react-icons/ai"
+import { Link } from 'react-scroll';
 
 function Navber() {
   const [open,setOpen] =useState(false)
@@ -37,12 +38,78 @@ function Navber() {
 
                 <div className='w-[40%]  '>
                   <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static bg-gray-300 md:bg-transparent md:flex-row gap-y-5  gap-x-10 `}>
+                  <Link 
+                    to="home" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
                     <List text="Home"/>
+      
+                  </Link>
+
+
+                  <Link 
+                    to="service" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
+                   <List text="Service"/>
+      
+                  </Link>
+
+                  
+
+                  <Link 
+                    to="protfolio" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
+                     <List text="Protfolio"/>
+      
+                  </Link>
+
+                  <Link 
+                    to="blog" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
+                      <List text="Blog"/>
+      
+                  </Link>
+
+                  <Link 
+                    to="contact" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
+                       <List text="Contact"/>
+      
+                  </Link>
+                  <Link 
+                    to="about" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={2000} 
+                  >
                     <List text="About"/>
-                    <List text="Service"/>
-                    <List text="Protfolio"/>
-                    <List text="Blog"/>
-                    <List text="Contact"/>
+      
+                  </Link>
+
+                    
+                    
+                        
+                   
                   </ul>
                 </div>
 

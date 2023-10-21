@@ -13,11 +13,11 @@ import ServiceList from '../common/ServiceList'
 
 function Service() {
   return (
-    <section className='md:my-[120px] my-[80px]'> 
+    <section className='md:my-[120px] my-[80px]' id='service'> 
       <Container>
       <h2 className='font-dm font-bold text-secondary mb-8 text-[30px] text-center'>My Service</h2>
        <div className='flex flex-wrap md:gap-16  gap-5 justify-center'>
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px]'>
             <div className='w-8 mx-auto'>
               <Image src={Uixi}/>
             </div>
@@ -29,7 +29,7 @@ function Service() {
               <ServiceList text="Mobile App Design"/>
           </div>
 
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px]'>
             <div className='w-8 mx-auto'>
               <Image src={Development}/>
             </div>
@@ -41,7 +41,7 @@ function Service() {
               <ServiceList text="React"/>
          </div>
 
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px]'>
             <div className='w-8 mx-auto'>
               <Image src={Insolation}/>
             </div>
@@ -53,7 +53,7 @@ function Service() {
               <ServiceList text="Illustration Set"/>
          </div>
 
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px] hidden md:block'>
             <div className='w-8 mx-auto'>
               <Image src={Seo}/>
             </div>
@@ -65,7 +65,7 @@ function Service() {
               <ServiceList text="On-Page SEO"/>
          </div>
 
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px] hidden md:block'>
             <div className='w-8 mx-auto'>
               <Image src={Data}/>
             </div>
@@ -77,7 +77,7 @@ function Service() {
               <ServiceList text="Sales Forecasting"/>
          </div>
 
-         <div className='w-[300px] bg-secondary py-16 rounded-[5px]'>
+         <div className='w-[300px] bg-secondary py-8 md:py-16 rounded-[5px] hidden md:block'>
             <div className='w-8 mx-auto'>
               <Image src={Data}/>
             </div>

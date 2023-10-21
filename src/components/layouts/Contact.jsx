@@ -14,16 +14,16 @@ import { CiLocationOn } from 'react-icons/ci'
 function Contact() {
   return (
     <>
-    <section className='my-[60px]'>
+    <section className='my-[60px]' id='contact'>
         <Container>
          <h2 className='font-dm font-bold text-secondary mb-16 text-[30px] text-center'>Contact Me</h2>
          
 
-         <Flex className="justify-between">
-            <div className='w-[40%]'>
-              
-                 <div className='flex gap-x-5 mb-5'>
-                    <div className='w-96 py-10 bg-secondary rounded-[5px] text-white text-center'>
+         <Flex className="flex-wrap justify-between gap-y-10">
+            <div className='lg:w-[40%] mx-auto xl:mx-0 '>
+           
+                 <div className='flex flex-wrap md:flex-nowrap md:gap-5 mb-5  md:w-full'>
+                    <div className='md:w-96 w-[360px]  mx-auto   py-10 bg-secondary rounded-[5px] text-white text-center'>
                         <Flex className="justify-center">
                          <GoProjectRoadmap size={50} />
                         </Flex>
@@ -39,7 +39,7 @@ function Contact() {
                         <p className='font-dm font-semibold text-white text-xl '>Complete project</p>
                     </div>
                    
-                    <div className='w-96 py-10'>
+                    <div className='md:w-96 w-[360px] mx-auto    py-10'>
                       <Flex className="items-center gap-x-5">
                         <AiTwotonePhone size={30} className='text-secondary'/>
                         <p className='font-dm font-medium text-base text-secondary'>01764262634</p>
@@ -54,12 +54,11 @@ function Contact() {
                       </Flex>
                        
                     </div>
-
                    
                  </div>
 
-                 <div className='flex gap-x-5'>
-                    <div className='w-96 py-10 bg-secondary rounded-[5px] text-white text-center'>
+                 <div className='flex gap-5 flex-wrap md:flex-nowrap'>
+                    <div className='md:w-96 w-[360px] mx-auto py-10 bg-secondary rounded-[5px] text-white text-center'>
                         <Flex className="justify-center">
                          <GiReturnArrow size={40} />
                         </Flex>
@@ -75,7 +74,7 @@ function Contact() {
                         <p className='font-dm font-semibold text-white text-xl '>Project Pending</p>
                     </div>
 
-                    <div className='w-96 py-10 bg-secondary rounded-[5px] text-white text-center'>
+                    <div className='md:w-96 w-[360px] mx-auto py-10 bg-secondary rounded-[5px] text-white text-center'>
                         <Flex className="justify-center">
                          <PiUsersThreeLight size={50} />
                         </Flex>
@@ -94,10 +93,13 @@ function Contact() {
                     </div>
                    
                  </div>
+
+  
+
             </div>
 
 
-            <Flex className='w-[48%] justify-between flex-wrap'>
+            <Flex className='lg:w-[48%] flex-wrap justify-between'>
                 <div className='w-[48%]'>
                   <Input text="First Name *" placeholder="Enter your first name"/>
                 </div>

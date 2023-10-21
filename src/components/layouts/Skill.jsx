@@ -21,7 +21,10 @@ function Skill() {
   
   useEffect(()=>{
     let filterdata = SkillData.filter((item)=>{
-      return  input == "" ? item.name : item.name.includes(input)
+      const inputName = input.toLocaleLowerCase()
+      const itemName = item.name.toLocaleLowerCase()
+      
+      return  inputName == "" ? itemName: itemName.includes(inputName)
     
       })
       setData(filterdata)

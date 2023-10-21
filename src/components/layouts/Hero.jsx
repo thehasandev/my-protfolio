@@ -12,7 +12,7 @@ import Image from '../common/Image';
 import Man from "../../assets/git.png"
 function Hero() {
   return (
-    <section className='md:py-[140px] py-[80px] '>
+    <section className='md:py-[140px] py-[80px] ' id='home'>
         <Container>
             <Flex className="flex-col-reverse gap-y-10 md:flex-row justify-center items-center">
                 <div className='md:w-[50%] md:mx-0 mx:auto '>

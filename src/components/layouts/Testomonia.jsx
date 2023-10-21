@@ -19,6 +19,28 @@ function Testomonia() {
         slidesToScroll: 1,
         arrows:false,
         dots:true,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                
+                }
+              },
+            {
+              breakpoint:480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+              }
+            }
+           
+      
+            
+          ],
         appendDots: dots => (
             <div>
               <ul className='flex justify-center gap-x-5 '> {dots} </ul>

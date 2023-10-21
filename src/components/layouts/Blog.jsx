@@ -9,10 +9,10 @@ import BlogCart from '../common/BlogCart'
 
 function Blog() {
   return (
-    <section>
+    <section id='blog'>
       <Container>
       <h2 className='font-dm font-bold text-secondary text-[30px] text-center my-16'>My Blogs</h2> 
-      <Flex className="justify-center gap-x-10">
+      <Flex className="justify-center gap-10 flex-wrap ">
        
         <BlogCart src={One} heading="Ecommerce Website Daraz"/>
         <BlogCart src={Two} heading="Ecommerce Website Orebi"/>
