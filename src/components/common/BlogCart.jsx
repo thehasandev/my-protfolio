@@ -2,8 +2,9 @@ import React from 'react'
 
 import Image from './Image'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
-function BlogCart({src,heading}) {
+function BlogCart({src,heading,link}) {
   return (
        <div className='w-[350px]'>
             <div className='full relative group  bg-slate-100 scale-105 overflow-hidden shadow-lg'>
@@ -13,7 +14,10 @@ function BlogCart({src,heading}) {
                 <div className='p-4'>
                     <h2 className='font-dm  font-bold text-2xl text-primary mt-4'>{heading}</h2>
                     <p className='font-dm my-4 font-normal text-sm text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum accusamus, maiores ratione exercitationem iusto?</p>
-                    <Button text="Veiw Blog"/>
+                    <Link to={link}>
+                      <Button text="Veiw Blog"/>
+                    </Link>
+                
                 </div>
         </div>
   )

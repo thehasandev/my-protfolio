@@ -14,9 +14,9 @@ function Blog() {
       <h2 className='font-dm font-bold text-secondary text-[30px] text-center my-16'>My Blogs</h2> 
       <Flex className="justify-center gap-10 flex-wrap ">
        
-        <BlogCart src={One} heading="Ecommerce Website Daraz"/>
-        <BlogCart src={Two} heading="Ecommerce Website Orebi"/>
-        <BlogCart src={Three} heading="Security Website Site"/>
+        <BlogCart src={One} heading="Ecommerce Website Daraz" link="https://daraz-ecommarce.netlify.app"/>
+        <BlogCart src={Two} heading="Ecommerce Website Orebi" link="https://ecommerce-orebi.netlify.app/"/>
+        <BlogCart src={Three} heading="Security Website Site" link="https://security-gurd.netlify.app"/>
 
       
 
