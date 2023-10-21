@@ -99,7 +99,7 @@ function Contact() {
             </div>
 
 
-            <Flex className='lg:w-[48%] flex-wrap justify-between'>
+            <Flex className='lg:w-[48%] flex-wrap justify-between px-4 md:px-0'>
                 <div className='w-[48%]'>
                   <Input text="First Name *" placeholder="Enter your first name"/>
                 </div>
