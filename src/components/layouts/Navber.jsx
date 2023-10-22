@@ -8,10 +8,18 @@ import Button from '../common/Button'
 import Image from '../common/Image'
 import {AiOutlineMenu} from "react-icons/ai"
 import { Link } from 'react-scroll';
+import {HiOutlineLightBulb} from "react-icons/hi"
+import {CiDark} from "react-icons/ci"
 
 function Navber() {
   const [open,setOpen] =useState(false)
   const [color,setColor] = useState(false)
+  const [dark,setDark] = useState(false)
+
+  const handleDark = ()=>{
+    console.log("dark");
+  }
+
   useEffect(()=>{
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -26,6 +34,7 @@ function Navber() {
       window.removeEventListener('scroll', handleScroll);
     };
   },[])
+
   return (
     <section className={` fixed w-full z-50 ${color && "bg-[#748CAB]"} px-4 xl:px-0`}>
         <Container>
@@ -113,7 +122,9 @@ function Navber() {
                   </ul>
                 </div>
 
-                <div className='w-[20%] flex justify-end '>
+                <div className='w-[20%] flex justify-end items-center gap-x-5'>
+                   <CiDark size={25} className={`${color&& "text-white"}`} onClick={handleDark}/>
+                   <HiOutlineLightBulb size={25} className={`${color&& "text-white"}`}/>
                    <Button text="Contract" className="hidden md:block"/>
                    <AiOutlineMenu size={30} className='md:hidden cursor-pointer' onClick={()=>{setOpen(!open)}}/>
                 </div>

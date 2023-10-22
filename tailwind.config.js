@@ -28,7 +28,7 @@ export default {
         'dm': ['DM Sans'],
       },
       colors: {
-        'primary': '#111111',
+        'primary': '#666666',
         'secondary': '#111111',
       },
  
