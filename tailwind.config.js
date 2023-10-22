@@ -29,7 +29,7 @@ export default {
       },
       colors: {
         'primary': '#111111',
-        'secondary': '#444444',
+        'secondary': '#111111',
       },
  
     },

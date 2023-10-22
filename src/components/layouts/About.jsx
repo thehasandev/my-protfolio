@@ -13,8 +13,8 @@ function About() {
                </div>
                <div className='md:w-[50%] w-[360px] mx-auto md:mx-0 px-4 xl:px-0'>
                <h2 className='font-dm font-bold text-secondary text-xl'>About Me</h2> 
-               <h2 className='font-dm font-bold text-primary text-lg md:text-xl md:w-8/12   my-2'>A dedicated Full Stack Web Developer based in Market Place</h2>
-                <p className='font-dm font-normal md:font-medium text-secondary text-sm md:text-base md:w-8/12 '>Hello! My name is Franklin Carlos Huichi Contreras, and I'm a Full Stack web developer. I specialize in Java, JavaScript, Spring Boot, Angular, and ReactJs. My focus is on creating responsive web pages and software systems using REST. Currently, I have professional experience with these technologies. I look forward to working together and creating amazing web solutions!</p>
+               <h2 className='font-dm font-bold text-secondary text-lg md:text-xl md:w-8/12   my-2'>A dedicated Full Stack Web Developer based in Market Place</h2>
+                <p className='font-dm font-normal md:font-medium text-primary text-sm md:text-base md:w-8/12 '>Hello! My name is Franklin Carlos Huichi Contreras, and I'm a Full Stack web developer. I specialize in Java, JavaScript, Spring Boot, Angular, and ReactJs. My focus is on creating responsive web pages and software systems using REST. Currently, I have professional experience with these technologies. I look forward to working together and creating amazing web solutions!</p>
                </div>
             </Flex>
         </Container>

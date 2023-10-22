@@ -34,7 +34,7 @@ function Project() {
         
         <Slider {...settings}>
         
-             <div className='md:w-full  bg-white shadow-xl shadow-gray-400/20  px-8 pt-8 md:pb-[140px] rounded-[5px]'>
+             <div className='md:w-full    px-8 pt-8 md:pb-[140px] rounded-[5px]'>
                 <Flex className="justify-between gap-y-5 flex-col md:flex-row">
                    <div className='md:w-[40%] relative overflow-hidden group'>
                     
@@ -54,8 +54,8 @@ function Project() {
                    </div>
 
                    <div className='md:w-[55%] md:text-left text-center'>
-                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-primary text-[20px]'>Orebi Ecommarce</h2> 
-                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-secondary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
+                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-secondary text-[20px]'>Orebi Ecommarce</h2> 
+                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-primary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -102,7 +102,7 @@ function Project() {
                 </Flex>
              </div>
 
-             <div className='md:w-full  bg-white shadow-xl shadow-gray-400/20  px-8 pt-8 md:pb-[140px] rounded-[5px]'>
+             <div className='md:w-full   px-8 pt-8 md:pb-[140px] rounded-[5px]'>
                 <Flex className="justify-between gap-y-5 flex-col md:flex-row">
                    <div className='md:w-[40%] relative overflow-hidden group'>
                     
@@ -122,8 +122,8 @@ function Project() {
                    </div>
 
                    <div className='md:w-[55%] md:text-left text-center'>
-                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-primary text-[20px]'>Daraz Ecommarce</h2> 
-                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-secondary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
+                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-secondary text-[20px]'>Daraz Ecommarce</h2> 
+                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-primary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -171,7 +171,7 @@ function Project() {
                 </Flex>
              </div>
 
-             <div className='md:w-full  bg-white shadow-xl shadow-gray-400/20  px-8 pt-8 md:pb-[140px] rounded-[5px]'>
+             <div className='md:w-full      px-8 pt-8 md:pb-[140px] rounded-[5px]'>
                 <Flex className="justify-between gap-y-5 flex-col md:flex-row">
                    <div className='md:w-[40%] relative overflow-hidden group'>
                     
@@ -191,8 +191,8 @@ function Project() {
                    </div>
 
                    <div className='md:w-[55%] md:text-left text-center'>
-                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-primary text-[20px]'>Security Gurd Website</h2> 
-                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-secondary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
+                   <h2 className='font-dm font-bold mb-2 md:mb-0 text-secondary text-[20px]'>Security Gurd Website</h2> 
+                    <p className='font-dm font-normal md:font-medium text-sm md:text-base text-primary mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12'>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 

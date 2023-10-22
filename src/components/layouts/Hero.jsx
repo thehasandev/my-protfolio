@@ -15,9 +15,9 @@ function Hero() {
   return (
     <section className='md:py-[140px] py-[80px] ' id='home'>
         <Container>
-            <Flex className="flex-col-reverse gap-y-10 md:flex-row justify-center items-center">
+            <Flex className="flex-col-reverse gap-y-10 lg:flex-row justify-center items-center">
                 <div className='md:w-[50%] md:mx-0 mx:auto '>
-                    <h1 className='font-dm font-bold md:w-[450px] px-4 md:px-0  mx-auto md:mx-0 md:text-3xl text-xl text-primary'>HI I'M MOHAMMED HASAN. I AM A <br />    <TypeAnimation
+                    <h1 className='font-dm font-bold md:w-[550px] px-4 md:px-0  mx-auto md:mx-0 md:text-3xl text-xl text-secondary'>HI I'M MOHAMMED HASAN. I AM A <br />    <TypeAnimation
                         sequence={[
                             'FRONT END DEVELOPER ',
                             1000,
@@ -30,12 +30,12 @@ function Hero() {
                         ]}
                             wrapper="span"
                             speed={50}
-                            className=' font-dm font-bold md:text-3xl inline-block text-xl text-primary text-center leading-[70px'
+                            className=' font-dm font-bold md:text-3xl inline-block text-xl text-secondary text-center leading-[70px'
             
                             repeat={Infinity}
                     /></h1>
                 
-                    <p className='font-dm font-medium my-5 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-secondary'>As a frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js</p>
+                    <p className='font-dm font-medium my-5 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-primary'>As a frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js</p>
                     
                     <Flex className="md:w-[360px] justify-between">
                     <Link to='https://github.com/thehasandev'>

@@ -54,7 +54,7 @@ function Skill() {
             <Flex className='justify-between flex-col md:flex-row px-4 xl:px-0 gap-y-10'>
                <div className='md:w-[40%] '>
                   <h2 className='font-dm font-bold text-secondary text-[30px]'>Summary</h2> 
-                  <p className='font-dm font-normal md:font-medium text-secondary text-sm md:text-base mt-5'>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
+                  <p className='font-dm font-normal md:font-medium text-primary text-sm md:text-base mt-5'>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
                   <Flex className="gap-x-2 items-center justify-center md:justify-start mt-5">
                   
                <Link to='https://github.com/thehasandev'>

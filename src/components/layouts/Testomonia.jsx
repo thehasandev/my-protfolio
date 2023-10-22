@@ -66,7 +66,7 @@ function Testomonia() {
              <Slider {...testomniaSettings}>
 
                 <div className='w-[250px]'>
-                    <div className='mx-5 bg-[#D1D5DB] px-10 py-8 rounded-[5px] '>
+                    <div className='mx-5 bg-[#F0EBD8] px-10 py-8 rounded-[5px] '>
                         <Flex className="gap-x-5 mb-5">
                             <div>
                                 <Image src={ClintOne} className="rounded-full"/>
@@ -88,7 +88,7 @@ function Testomonia() {
                 </div>
 
                 <div className='w-[250px]'>
-                    <div className='mx-5 bg-[#D1D5DB] px-10 py-8 rounded-[5px] '>
+                    <div className='mx-5 bg-[#F0EBD8] px-10 py-8 rounded-[5px] '>
                     <Flex className="gap-x-5 mb-5">
                         <div>
                             <Image src={ClintTwo} className="rounded-full"/>
@@ -110,7 +110,7 @@ function Testomonia() {
                 </div>
 
                 <div className='w-[250px]  '>
-                    <div className='mx-5 bg-[#D1D5DB] px-10 py-8 rounded-[5px]'>
+                    <div className='mx-5 bg-[#F0EBD8] px-10 py-8 rounded-[5px]'>
                     <Flex className="gap-x-5 mb-5">
                         <div>
                             <Image src={ClintThree} className="rounded-full"/>

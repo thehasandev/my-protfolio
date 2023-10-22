@@ -27,7 +27,7 @@ function Navber() {
     };
   },[])
   return (
-    <section className={` fixed w-full z-50 ${color && "bg-gray-300"} px-4 xl:px-0`}>
+    <section className={` fixed w-full z-50 ${color && "bg-[#748CAB]"} px-4 xl:px-0`}>
         <Container>
             <Flex className="justify-between items-center py-2">
                 <div className='w-[10%]'>
@@ -45,7 +45,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <List text="Home"/>
+                    <List text="Home" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
 
@@ -57,7 +57,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <List text="Service"/>
+                   <List text="Service" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
 
@@ -70,7 +70,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                     <List text="Protfolio"/>
+                     <List text="Protfolio" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
 
@@ -81,7 +81,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                      <List text="Blog"/>
+                      <List text="Blog" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
 
@@ -92,7 +92,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                       <List text="Contact"/>
+                       <List text="Contact" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
                   <Link 
@@ -102,7 +102,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <List text="About"/>
+                    <List text="About" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
       
                   </Link>
 
