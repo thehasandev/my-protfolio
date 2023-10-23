@@ -59,9 +59,9 @@ function Skill() {
          
               
 
-                  <Link to="../src/assets/cv.pdf" target="_blank" download>
+                  <a href="../src/assets/cv.pdf"  download>
                     fsffdsfdsf
-                  </Link>
+                  </a>
         
                   </Flex>
                </div>
