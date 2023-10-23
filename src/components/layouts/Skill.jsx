@@ -6,6 +6,7 @@ import Image from "../common/Image"
 import Button from '../common/Button'
 import ExamplePdf from '../../assets/cv.pdf';
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 
 function Skill() {
@@ -56,14 +57,10 @@ function Skill() {
                   <p className={`font-dm font-normal md:font-medium  text-sm md:text-base mt-5  ${darkData ? "text-white md:font-light" : "text-primary md:font-medium"}`}>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
                   <Flex className="gap-x-2 items-center justify-center md:justify-start mt-5">
          
-                  {/* <a
-                    href={ExamplePdf}
-                    download="Example-PDF-document"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button><Button text="Downlod CV" className="uppercase"/></button>
-                  </a> */}
+
+                  <Link to="../src/assets/cv.pdf" target="_blank" download>
+                    <Button text="download  cv" className="uppercase"/>
+                  </Link>
         
                   </Flex>
                </div>

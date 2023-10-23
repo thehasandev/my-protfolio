@@ -42,30 +42,30 @@ function Footer() {
                 <div className='md:w-2/12 '>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>Menu</h3>
                   <ul>
-                    <List text="Home" footer/>
-                    <List text="About" footer/>
-                    <List text="Service" footer/>
-                    <List text="Protpolio" footer/>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>About</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Protpolio</li>
                   </ul>
                 </div>
 
                 <div className='md:w-2/12 '>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>Service</h3>
                   <ul>
-                    <List text="Home" footer/>
-                    <List text="About" footer/>
-                    <List text="Service" footer/>
-                    <List text="Protpolio" footer/>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white '>About</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Protpolio</li>
                   </ul>
                 </div>
 
                 <div className='md:w-2/12  hidden md:block'>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>BLOG</h3>
                   <ul>
-                    <List text="Portfolio" footer/>
-                    <List text="Personal Blog" footer/>
-                    <List text="Photo Blogging" footer/>
-                    <List text="Prasad Theme" footer/>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Portfolio</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Personal Blog</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Photo Blogging</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Prasad Theme</li>
                   </ul>
                 </div>
 
