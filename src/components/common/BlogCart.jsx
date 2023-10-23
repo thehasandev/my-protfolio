@@ -17,7 +17,7 @@ function BlogCart({src,heading,link}) {
                     <h2 className={`font-dm  font-bold text-2xl  mt-5 ${darkData ? "text-white":"text-secondary"}`}>{heading}</h2>
                     <p className={`font-dm my-4 font-normal text-sm  ${darkData ? "text-white" :"text-primary"}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum accusamus, maiores ratione exercitationem iusto?</p>
                     <Link to={link}>
-                      <Button text="Veiw Blog" className={`${darkData && "bg-white text-[#111111] hover:bg-white"}`}/>
+                      <Button text="Veiw Blog"/>
                     </Link>
                 
                 </div>

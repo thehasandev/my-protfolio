@@ -52,7 +52,7 @@ function Navber() {
                 </div>
 
                 <div className={`w-[40%]`}>
-                  <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static bg-[#1D2D44] md:bg-transparent md:flex-row gap-y-5  gap-x-10 `}>
+                  <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static  md:bg-transparent md:flex-row gap-y-5  gap-x-10  ${darkData ? "bg-secondary" : "bg-[#1D2D44]"}`}>
                   <Link 
                     to="home" 
                     spy={true} 
@@ -128,15 +128,15 @@ function Navber() {
                   </ul>
                 </div>
 
-                <div className={`w-[20%] flex justify-end items-center gap-x-5 ${darkData && "text-white"}`}>
+                <div className={`w-[200px] flex justify-end items-center gap-x-5 ${darkData && "text-white"}`}>
               
-                   <MdOutlineDarkMode className={`${color&& "text-white"}`} onClick={()=>{handleDark(true)}}/>
+                   <MdOutlineDarkMode size={25} className={` ${color&& "text-white"}`} onClick={()=>{handleDark(true)}}/>
               
-                   <HiOutlineLightBulb  className={`${color&& "text-white"}`} onClick={()=>{handleDark(false)}}/>
-                   <CgMenuRight className={`md:hidden cursor-pointer ${darkData && "text-white"}   ${color ? "text-white": "text-secondary"}`} onClick={()=>{setOpen(!open)}}/>
+                   <HiOutlineLightBulb  size={25} className={` ${color&& "text-white"}`} onClick={()=>{handleDark(false)}}/>
+                   <CgMenuRight size={25} className={` md:hidden cursor-pointer ${darkData && "text-white"}   ${color ? "text-white": "text-secondary"}`} onClick={()=>{setOpen(!open)}}/>
                   
-                </div>
                    <Button text="Contract" className={`hidden md:block ${darkData && "bg-white text-[#111111]"} ${color&& "border-white bg-white text-[#111111] hover:bg-white"}`} />
+                </div>
             </Flex>
         </Container>
     </section>
