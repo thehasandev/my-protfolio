@@ -6,18 +6,24 @@ import Logo from "../../assets/logo.png"
 import List from '../common/List'
 import Button from '../common/Button'
 import Image from '../common/Image'
-import {AiOutlineMenu} from "react-icons/ai"
+import {CgMenuRight} from "react-icons/cg"
 import { Link } from 'react-scroll';
 import {HiOutlineLightBulb} from "react-icons/hi"
-import {CiDark} from "react-icons/ci"
+import {MdOutlineDarkMode,MdDarkMode} from "react-icons/md"
+import { useDispatch, useSelector } from 'react-redux'
+import { darkTrue } from '../../slices/darkSlices'
 
 function Navber() {
+  let darkData = useSelector((state)=>state.dark.darkitem)
+
+ 
   const [open,setOpen] =useState(false)
   const [color,setColor] = useState(false)
-  const [dark,setDark] = useState(false)
 
-  const handleDark = ()=>{
-    console.log("dark");
+  const dispatch = useDispatch()
+
+  const handleDark = (data)=>{
+    dispatch(darkTrue(data))
   }
 
   useEffect(()=>{
@@ -36,7 +42,7 @@ function Navber() {
   },[])
 
   return (
-    <section className={` fixed w-full z-50 ${color && "bg-[#748CAB]"} px-4 xl:px-0`}>
+    <section className={`fixed w-full z-50  ${color && `${darkData ? "bg-secondary" : "bg-[#1D2D44]"}`} px-4 xl:px-0`}>
         <Container>
             <Flex className="justify-between items-center py-2">
                 <div className='w-[10%]'>
@@ -45,8 +51,8 @@ function Navber() {
                   </div>
                 </div>
 
-                <div className='w-[40%]  '>
-                  <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static bg-gray-300 md:bg-transparent md:flex-row gap-y-5  gap-x-10 `}>
+                <div className={`w-[40%]`}>
+                  <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static bg-[#1D2D44] md:bg-transparent md:flex-row gap-y-5  gap-x-10 `}>
                   <Link 
                     to="home" 
                     spy={true} 
@@ -54,7 +60,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <List text="Home" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                    <List text="Home" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
 
@@ -66,7 +72,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <List text="Service" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                   <List text="Service" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
 
@@ -79,7 +85,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                     <List text="Protfolio" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                     <List text="Protfolio" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
 
@@ -90,7 +96,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                      <List text="Blog" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                      <List text="Blog" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
 
@@ -101,7 +107,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                       <List text="Contact" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                       <List text="Contact" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
                   <Link 
@@ -111,7 +117,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <List text="About" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-secondary"}`}/>
+                    <List text="About" className={`${color?"text-white after:bg-white hover:text-white" : "hover:text-white"}`}/>
       
                   </Link>
 
@@ -122,12 +128,15 @@ function Navber() {
                   </ul>
                 </div>
 
-                <div className='w-[20%] flex justify-end items-center gap-x-5'>
-                   <CiDark size={25} className={`${color&& "text-white"}`} onClick={handleDark}/>
-                   <HiOutlineLightBulb size={25} className={`${color&& "text-white"}`}/>
-                   <Button text="Contract" className="hidden md:block"/>
-                   <AiOutlineMenu size={30} className='md:hidden cursor-pointer' onClick={()=>{setOpen(!open)}}/>
+                <div className={`w-[20%] flex justify-end items-center gap-x-5 ${darkData && "text-white"}`}>
+              
+                   <MdOutlineDarkMode className={`${color&& "text-white"}`} onClick={()=>{handleDark(true)}}/>
+              
+                   <HiOutlineLightBulb  className={`${color&& "text-white"}`} onClick={()=>{handleDark(false)}}/>
+                   <CgMenuRight className={`md:hidden cursor-pointer ${darkData && "text-white"}   ${color ? "text-white": "text-secondary"}`} onClick={()=>{setOpen(!open)}}/>
+                  
                 </div>
+                   <Button text="Contract" className={`hidden md:block ${darkData && "bg-white text-[#111111]"} ${color&& "border-white bg-white text-[#111111] hover:bg-white"}`} />
             </Flex>
         </Container>
     </section>

@@ -11,14 +11,15 @@ import Blog from "../components/layouts/Blog"
 import Testomonia from "../components/layouts/Testomonia"
 import About from "../components/layouts/About"
 import Contact from "../components/layouts/Contact"
-import Footer from "../components/layouts/Footer"
+import { useSelector } from 'react-redux'
 
 
 
 function Home() {
+  let darkData = useSelector((state)=>state.dark.darkitem)
+ 
   return (
-    <>
-     
+    <div className={`${darkData? "bg-secondary text-white" : "bg-white"}`}>  
       <Hero/>
       <Skill/>
       <Service/>
@@ -31,7 +32,7 @@ function Home() {
       <Contact/>
      
        
-    </>
+    </div>
   )
 }
 

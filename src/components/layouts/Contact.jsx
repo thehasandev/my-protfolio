@@ -10,59 +10,27 @@ import {GiReturnArrow} from "react-icons/gi"
 import CountUp from 'react-countup';
 import { AiTwotonePhone,AiOutlineMail } from 'react-icons/ai'
 import { CiLocationOn } from 'react-icons/ci'
+import { useSelector } from 'react-redux'
 
 function Contact() {
+  let darkData = useSelector((state)=>state.dark.darkitem)
   return (
     <>
-    <section className='my-[60px]' id='contact'>
+    <section className='py-[60px]' id='contact'>
         <Container>
-         <h2 className='font-dm font-bold text-secondary mb-16 text-[30px] text-center'>Contact Me</h2>
+         <h2 className={`font-dm font-bold  mb-16 text-[30px] text-center ${darkData ? "text-white" :"text-secondary"}`}>Contact Me</h2>
          
 
          <Flex className="flex-wrap justify-between gap-y-10">
             <div className='lg:w-[40%] mx-auto xl:mx-0 '>
            
-                 <div className='flex flex-wrap md:flex-nowrap md:gap-5 mb-5  md:w-full'>
-                    <div className='md:w-96 w-[360px]  mx-auto   py-10 bg-secondary rounded-[5px] text-white text-center'>
-                        <Flex className="justify-center">
-                         <GoProjectRoadmap size={50} />
-                        </Flex>
-                        <div className='font-dm font-semibold text-white text-2xl my-2'>
-                          <CountUp start={0} end={80} delay={0}>
-                                {({ countUpRef }) => (
-                                  <div>
-                                    <span ref={countUpRef} />
-                                  </div>
-                                )}
-                            </CountUp>
-                        </div>
-                        <p className='font-dm font-semibold text-white text-xl '>Complete project</p>
-                    </div>
-                   
-                    <div className='md:w-96 w-[360px] mx-auto    py-10'>
-                      <Flex className="items-center gap-x-5">
-                        <AiTwotonePhone size={30} className='text-secondary'/>
-                        <p className='font-dm font-medium text-base text-secondary'>01764262634</p>
-                      </Flex>
-                      <Flex className="items-center gap-x-5 my-4">
-                        <AiOutlineMail size={30} className='text-secondary'/>
-                        <p className='font-dm font-medium text-base text-secondary'>thehasandev@gmail.com</p>
-                      </Flex>
-                      <Flex className="items-center gap-x-5">
-                        <CiLocationOn size={30} className='text-secondary'/>
-                        <p className='font-dm font-medium text-base text-secondary'>thehasandev@gmail.com</p>
-                      </Flex>
-                       
-                    </div>
-                   
-                 </div>
 
                  <div className='flex gap-5 flex-wrap md:flex-nowrap'>
-                    <div className='md:w-96 w-[360px] mx-auto py-10 bg-secondary rounded-[5px] text-white text-center'>
+                    <div className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  ${darkData ? "bg-white text-secondary" :"bg-[#1D2D44] text-white"}`}>
                         <Flex className="justify-center">
                          <GiReturnArrow size={40} />
                         </Flex>
-                        <div className='font-dm font-semibold text-white text-2xl my-4'>
+                        <div className={`font-dm font-semibold  text-2xl my-2 ${darkData ? "text-secondary":"text-white"}`}>
                           <CountUp start={0} end={10} delay={0}>
                                 {({ countUpRef }) => (
                                   <div>
@@ -71,14 +39,14 @@ function Contact() {
                                 )}
                             </CountUp>
                         </div>
-                        <p className='font-dm font-semibold text-white text-xl '>Project Pending</p>
+                        <p className={`font-dm font-semibold  text-xl ${darkData ? "text-secondary" : "text-white"}`}>Project Pending</p>
                     </div>
 
-                    <div className='md:w-96 w-[360px] mx-auto py-10 bg-secondary rounded-[5px] text-white text-center'>
+                    <div className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  ${darkData ? "bg-white text-secondary" :"bg-[#1D2D44] text-white"}`}>
                         <Flex className="justify-center">
                          <PiUsersThreeLight size={50} />
                         </Flex>
-                        <div className='font-dm font-semibold text-white text-2xl my-4'>
+                        <div className={`font-dm font-semibold  text-2xl my-2 ${darkData ? "text-secondary":"text-white"}`}>
                           <CountUp start={0} end={150} delay={0}>
                                 {({ countUpRef }) => (
                                   <div>
@@ -89,7 +57,42 @@ function Contact() {
 
                         </div>
                        
-                        <p className='font-dm font-semibold text-white text-xl '>Client review</p>
+                        <p className={`font-dm font-semibold  text-xl ${darkData ? "text-secondary" : "text-white"}`}>Client review</p>
+                    </div>
+                   
+                 </div>
+
+                 <div className='flex flex-wrap md:flex-nowrap md:gap-5 mt-5  md:w-full'>
+                    <div className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  ${darkData ? "bg-white text-secondary" :"bg-[#1D2D44] text-white"}`}>
+                        <Flex className="justify-center">
+                         <GoProjectRoadmap size={50} />
+                        </Flex>
+                        <div className={`font-dm font-semibold  text-2xl my-2 ${darkData ? "text-secondary":"text-white"}`}>
+                          <CountUp start={0} end={80} delay={0}>
+                                {({ countUpRef }) => (
+                                <div>
+                                    <span  ref={countUpRef} />
+                                  </div>
+                                )}
+                            </CountUp>
+                        </div>
+                        <p className={`font-dm font-semibold  text-xl ${darkData ? "text-secondary" : "text-white"}`}>Complete project</p>
+                    </div>
+                   
+                    <div className='md:w-96 w-[360px] mx-auto    py-10'>
+                      <Flex className="items-center gap-x-5">
+                        <AiTwotonePhone size={30} className={`${darkData ? "text-white" : "text-secondary"}`}/>
+                        <p className={`font-dm font-medium text-base  ${darkData ? "text-white":"text-secondary"}`}>01764262634</p>
+                      </Flex>
+                      <Flex className="items-center gap-x-5 my-4">
+                        <AiOutlineMail size={30} className={`${darkData ? "text-white" : "text-secondary"}`}/>
+                        <p  className={`font-dm font-medium text-base  ${darkData ? "text-white":"text-secondary"}`}>thehasandev@gmail.com</p>
+                      </Flex>
+                      <Flex className="items-center gap-x-5">
+                        <CiLocationOn size={30} className={`${darkData ? "text-white" : "text-secondary"}`}/>
+                        <p  className={`font-dm font-medium text-base  ${darkData ? "text-white":"text-secondary"}`}>thehasandev@gmail.com</p>
+                      </Flex>
+                       
                     </div>
                    
                  </div>
@@ -100,18 +103,18 @@ function Contact() {
 
 
             <Flex className='lg:w-[48%] flex-wrap justify-between px-4 md:px-0'>
-                <div className='w-[48%]'>
+                <div className='w-[48%] '>
                   <Input text="First Name *" placeholder="Enter your first name"/>
                 </div>
                 <div className='w-[48%]'>
                   <Input text="Last Name *" placeholder="Enter your last name"/>
                 </div>
-                <div className='w-full my-4'> 
+                <div className='w-full my-5'> 
                   <Input text="Email *" placeholder="Enter your email"/>
                 </div>
                 <div className='w-full relative'> 
-                <h4 className='font-dm font-bold text-sm pb-3 bg-white py-1 px-5 inline absolute -top-4 left-5 '>Message</h4>
-                  <textarea className='w-full border border-solid border-gray-400 rounded-[5px] py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
+                <h4 className={`font-dm font-bold text-sm   text-secondary py-1 px-5 inline absolute -top-4 left-5 ${darkData ? "bg-[#F0EBD8]" : "bg-white"}`}>Message</h4>
+                  <textarea placeholder='Enter your message' className='w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
 
                   </textarea>
                 </div>

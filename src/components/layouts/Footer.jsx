@@ -8,10 +8,12 @@ import Man from "../../assets/git.png"
 import { AiOutlineTwitter,AiOutlineInstagram} from "react-icons/ai"
 import { FaFacebookF} from "react-icons/fa"
 import { BiLogoLinkedin} from "react-icons/bi"
+import { useSelector } from 'react-redux'
 
 function Footer() {
+  let darkData = useSelector((state)=>state.dark.darkitem)
   return (
-    <section className='py-[60px] bg-[#1D2D44] px-4 xl:px-0'>
+    <section className={`py-[60px]  px-4 xl:px-0 ${darkData ? "bg-secondary" : "bg-[#1D2D44]"}`}>
         <Container>
             <Flex className="justify-center flex-wrap gap-y-10">
                 <div className='md:w-3/12 '>

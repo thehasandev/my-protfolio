@@ -6,12 +6,14 @@ import Two from "../../assets/orebiBanner.png"
 import Three from "../../assets/security.png"
 import Flex from '../common/Flex'
 import BlogCart from '../common/BlogCart'
+import { useSelector } from 'react-redux'
 
 function Blog() {
+  let darkData = useSelector((state)=>state.dark.darkitem)
   return (
     <section id='blog'>
       <Container>
-      <h2 className='font-dm font-bold text-secondary text-[30px] text-center my-16'>My Blogs</h2> 
+      <h2 className={`font-dm font-bold  text-[30px] text-center my-16 ${darkData ? "text-white" : "text-secondary"}`}>My Blogs</h2> 
       <Flex className="justify-center gap-10 flex-wrap ">
        
         <BlogCart src={One} heading="Ecommerce Website Daraz" link="https://daraz-ecommarce.netlify.app"/>

@@ -7,10 +7,13 @@ import protfolioData from "../Data/protfolio"
 import Flex from '../common/Flex'
 import Image from '../common/Image'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Protfolio() {
   const [data,setData] = useState(protfolioData)
   const [filterProtfolio,setFilterProtfolio] = useState(protfolioData)
+
+  let darkData = useSelector((state)=>state.dark.darkitem)
 
 
   const handleSubmit =(name)=>{
@@ -32,9 +35,9 @@ function Protfolio() {
    
   }
   return (
-    <section className='md:py-[120px] py-[80px] bg-white' id='protfolio'>
+    <section className={`md:py-[120px] py-[80px]  ${darkData ? "bg-secondary" : "bg-white"}`} id='protfolio'>
       <Container>
-      <h2 className='font-dm font-bold text-center text-secondary text-[30px] mb-5'>My Protfolio </h2> 
+      <h2 className={`font-dm font-bold text-center  text-[30px] mb-5  ${darkData ? "text-white" : "text-secondary"}`}>My Protfolio </h2> 
          <ul className='flex  justify-center md:gap-x-10 gap-x-2 flex-wrap'>
             <li onClick={()=>{handleSubmit("Html Css")}} className='font-dm text-base hover:bg-secondary hover:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]'>
                Html Css
@@ -63,7 +66,7 @@ function Protfolio() {
       
           
           
-        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[400px] overflow-y-scroll">
+        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[450px] md:bg-white py-5 rounded-[5px] overflow-y-scroll">
 
           {
             filterProtfolio.length ?
