@@ -59,10 +59,11 @@ function Skill() {
                   <Flex className="gap-x-2 items-center justify-center md:justify-start mt-5">
          
               
-
-                  <a href={MYcv} download="">
-                    fsffdsfdsf
-                  </a>
+                
+                  <Link to={MYcv} target="_blank" download>
+                     <Button text="DOWNLOAD CV" className="uppercase"/>
+                  </Link>
+              
         
                   </Flex>
                </div>

@@ -8,8 +8,8 @@ import Button from '../common/Button'
 import Image from '../common/Image'
 import {CgMenuRight} from "react-icons/cg"
 import { Link } from 'react-scroll';
-import {HiOutlineLightBulb} from "react-icons/hi"
-import {MdOutlineDarkMode,MdDarkMode} from "react-icons/md"
+import {CiLight,CiDark} from "react-icons/ci"
+
 import { useDispatch, useSelector } from 'react-redux'
 import { darkTrue } from '../../slices/darkSlices'
 
@@ -19,12 +19,24 @@ function Navber() {
  
   const [open,setOpen] =useState(false)
   const [color,setColor] = useState(false)
+  const [down,setDown] = useState(false)
+
+  const [input,setInput] = useState("")
+
+  const handleInput = (e)=>{
+      setInput(e.target.checked)
+  }
+  
+
+  
+
 
   const dispatch = useDispatch()
 
-  const handleDark = (data)=>{
-    dispatch(darkTrue(data))
-  }
+  dispatch(darkTrue(input))
+
+ 
+
 
   useEffect(()=>{
     const handleScroll = () => {
@@ -51,8 +63,88 @@ function Navber() {
                   </div>
                 </div>
 
-                <div className={`w-[40%]`}>
-                  <ul className={`flex  justify-center items-center  flex-col absolute left-0 top-16 ${open ? "rotate-x-0 duration-500" : "duration-500 rotate-x-90 origin-top"} py-10 md:py-0  w-full  -translate-x-1/2 md:translate-x-0 md:static  md:bg-transparent md:flex-row gap-y-5  gap-x-10  ${darkData ? "bg-secondary" : "bg-[#1D2D44]"}`}>
+                <div className={`w-[40%] hidden md:block`}>
+                 
+                  <ul className={`flex   justify-center   gap-x-10  `}>
+                    <Link 
+                      to="home" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                      <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Home</li>
+              
+        
+                    </Link>
+
+                    <Link 
+                      to="service" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                      <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Service</li>
+                  
+        
+                    </Link> 
+
+                    <Link 
+                      to="protfolio" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                    <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Protfolio</li>
+                  
+        
+                    </Link>
+
+                    <Link 
+                      to="blog" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                      <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Blog</li>
+                    
+        
+                    </Link>
+
+                    <Link 
+                      to="contact" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                    <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Contact</li>
+                      
+        
+                    </Link>
+
+                    <Link 
+                      to="about" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
+                <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>About</li>
+                    
+        
+                    </Link>
+
+                  </ul>
+
+                  </div>
+
+              {/* Responsive Menu  */}
+              <div className='md:hidden block'>
+                  <ul className={` absolute flex flex-col items-center gap-y-4 py-5 top-16 left-0 ${darkData ? "bg-secondary" : "bg-[#1D2D44]"} w-full ${open ? "rotate-x-0" : "rotate-x-90"}  duration-500`}>
                   <Link 
                     to="home" 
                     spy={true} 
@@ -60,7 +152,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Home</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Home</li>
              
       
                   </Link>
@@ -73,7 +165,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Service</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Service</li>
                  
       
                   </Link>
@@ -87,7 +179,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Protfolio</li>
+                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Protfolio</li>
                  
       
                   </Link>
@@ -99,7 +191,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Blog</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Blog</li>
                   
       
                   </Link>
@@ -111,7 +203,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Contact</li>
+                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Contact</li>
                      
       
                   </Link>
@@ -122,7 +214,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-               <li className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>About</li>
+               <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>About</li>
                    
       
                   </Link>
@@ -132,13 +224,29 @@ function Navber() {
                         
                    
                   </ul>
-                </div>
 
-                <div className={`w-[200px] flex justify-end items-center gap-x-5 ${darkData && "text-white"}`}>
+              </div>
+
+
+                
+
+                <div className={`w-[250px] flex justify-end items-center gap-x-5 ${darkData && "text-black"}`}>
               
-                   <MdOutlineDarkMode size={25} className={` ${color&& "text-white"}`} onClick={()=>{handleDark(true)}}/>
-              
-                   <HiOutlineLightBulb  size={25} className={` ${color&& "text-white"}`} onClick={()=>{handleDark(false)}}/>
+            
+                  <label className="relative inline-flex items-center cursor-pointer ">
+                    <input type="checkbox" checked={input}  onChange={handleInput} className="sr-only peer "/>
+                    <div className={` w-12 h-6 border  peer-focus:outline-none    rounded-full peer  peer-checked:after:translate-x-full  peer-checked:-z-50  after:content-[''] after:absolute after:top-[2px] after:left-[4px]  after:border-secondary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-primary  focus:outline-0 peer-checked:bg-white ${color ? "border-white after:bg-white z-30" : "border-secondary after:bg-secondary"}`}></div>
+                  <CiLight size={18} className={`absolute top-1/2 -translate-y-1/2 left-1 font-bold z-10 text-secondary  `}/>
+                  <CiDark size={18} className={`absolute top-1/2 -translate-y-1/2 right-1 font-bold  ${color?"text-white": "text-secondary"}`}/>
+                  
+                    
+                  </label>
+
+
+           
+
+
+
                    <CgMenuRight size={25} className={` md:hidden cursor-pointer ${darkData && "text-white"}   ${color ? "text-white": "text-secondary"}`} onClick={()=>{setOpen(!open)}}/>
                   
                   
