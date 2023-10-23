@@ -7,6 +7,7 @@ import Button from '../common/Button'
 import ExamplePdf from '../../assets/cv.pdf';
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import MYcv  from "../../assets/cv.pdf"
 
 
 function Skill() {
@@ -59,7 +60,7 @@ function Skill() {
          
               
 
-                  <a href="../src/assets/cv.pdf"  download>
+                  <a href={MYcv} download="">
                     fsffdsfdsf
                   </a>
         
