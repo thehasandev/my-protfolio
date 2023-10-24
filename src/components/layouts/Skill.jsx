@@ -4,10 +4,9 @@ import Flex from '../common/Flex'
 import SkillData from "../Data/skill"
 import Image from "../common/Image"
 import Button from '../common/Button'
-import ExamplePdf from '../../assets/cv.pdf';
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import MYcv  from "../../assets/cv.pdf"
+import MYcv  from "../../assets/Hasan_resume.pdf"
 
 
 function Skill() {
@@ -55,7 +54,14 @@ function Skill() {
             <Flex className='justify-between flex-col md:flex-row px-4 xl:px-0 gap-y-10'>
                <div className='md:w-[40%] '>
                   <h2 className={`font-dm font-bold text-secondary text-[30px] ${darkData ? "text-white" : "text-secondary"}`}>Summary</h2> 
-                  <p className={`font-dm font-normal md:font-medium  text-sm md:text-base mt-5  ${darkData ? "text-white md:font-light" : "text-primary md:font-medium"}`}>Knowledgeable Full Stack Developer brings superior front-end and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS and JavaScript programming languages to generate custom webpage design. Extensive collaboration with frontend to ascertain company expectations and oversee site creation, from initial planning through rollout and support. Detail-oriented approach to maintaining website responsiveness, effectiveness and security</p>    
+                  <p className={`font-dm font-normal md:font-medium  text-sm md:text-base mt-5  ${darkData ? "text-white md:font-light" : "text-primary md:font-medium"}`}>
+                        I am a passionate web application and software developer specializing in MERN Stack web development. As a
+                        frontend developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in
+                        React.js. I can develop any Figma or PSD template into React.js, and it will be responsive. I develop using modern
+                        frameworks like Tailwind CSS to create visually stunning websites.
+                        Currently, I'm working with Node.js, MongoDB, and Express.js. Recently, I developed an e-commerce website named
+                        Daraz, which showcases my capabilities and sets me apart from others in the field
+                    </p>    
                   <Flex className="gap-x-2 items-center justify-center md:justify-start mt-5">
          
               

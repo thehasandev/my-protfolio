@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Container from '../common/Container'
 import Flex from '../common/Flex'
 import Logo from "../../assets/Document from Hasan (1).jpg"
-import List from '../common/List'
-import Button from '../common/Button'
+
 import Image from '../common/Image'
 import {CgMenuRight} from "react-icons/cg"
 import { Link } from 'react-scroll';
