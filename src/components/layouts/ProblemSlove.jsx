@@ -14,8 +14,9 @@ function ProblemSlove() {
         <Flex className="gap-x-5 justify-center flex-col md:flex-row">
 
          <div className='lg:w-[40%]'>
-            <div className='md:w-[400px] w-[300px] mx-auto'>
-            <Image src={Problem}/> 
+            <div className='md:w-[350px] w-[300px] mx-auto'>
+
+            <Image src="https://www.web24zone.com/wp-content/uploads/2022/10/46207-programmer-1.gif"/> 
             </div>
          </div>  
 

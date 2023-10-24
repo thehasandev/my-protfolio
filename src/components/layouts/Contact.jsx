@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+
 import Container from '../common/Container'
 import Input from '../common/Input'
 import Flex from '../common/Flex'
@@ -11,15 +12,31 @@ import CountUp from 'react-countup';
 import { AiTwotonePhone,AiOutlineMail } from 'react-icons/ai'
 import { CiLocationOn } from 'react-icons/ci'
 import { useSelector } from 'react-redux'
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_n80v8is', 'template_279n7dl', form.current, 'zcRWr5eZJRMzTUoYT')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
   let darkData = useSelector((state)=>state.dark.darkitem)
   return (
     <>
     <section className='py-[60px]' id='contact'>
         <Container>
+
          <h2 className={`font-dm font-bold  mb-16 text-[30px] text-center ${darkData ? "text-white" :"text-secondary"}`}>Contact Me</h2>
-         
 
          <Flex className="flex-wrap justify-between gap-y-10">
             <div className='lg:w-[40%] mx-auto xl:mx-0 '>
@@ -101,27 +118,29 @@ function Contact() {
 
             </div>
 
-
+        
+             <form ref={form} onSubmit={sendEmail}>
             <Flex className='lg:w-[48%] flex-wrap justify-between px-4 md:px-0'>
                 <div className='w-[48%] '>
-                  <Input text="First Name *" placeholder="Enter your first name"/>
+                  <Input text="First Name *" name="user_name" placeholder="Enter your first name"/>
                 </div>
                 <div className='w-[48%]'>
-                  <Input text="Last Name *" placeholder="Enter your last name"/>
+                  <Input text="Last Name *" name="user_name" placeholder="Enter your last name"/>
                 </div>
                 <div className='w-full my-5'> 
-                  <Input text="Email *" placeholder="Enter your email"/>
+                  <Input text="Email *" name="user_email" placeholder="Enter your email"/>
                 </div>
                 <div className='w-full relative'> 
                 <h4 className={`font-dm font-bold text-sm   text-secondary py-1 px-5 inline absolute -top-4 left-5 ${darkData ? "bg-[#F0EBD8]" : "bg-white"}`}>Message</h4>
-                  <textarea placeholder='Enter your message' className='w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
+                  <textarea placeholder='Enter your message' name="message" className='w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
 
                   </textarea>
                 </div>
                 <Flex className="justify-center w-full">
-                  <Button text="Send a Message" className="mt-5 uppercase"/>
+                  <input type="submit" value="Send" />
                 </Flex>
             </Flex>
+             </form>
          </Flex>
         </Container>
     </section>

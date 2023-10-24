@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../common/Container'
 import Flex from '../common/Flex'
 import Image from '../common/Image'
-import Computer from "../../assets/computer.jpg"
+import Computer from "../../assets/DSC_0011.jpg"
 import { useSelector } from 'react-redux'
 function About() {
   let darkData = useSelector((state)=>state.dark.darkitem)
