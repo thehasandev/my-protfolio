@@ -117,30 +117,31 @@ function Contact() {
   
 
             </div>
+            
+            <form className='w-[45%]'>
+              <Flex className='lg:w-full flex-wrap justify-between px-4 md:px-0'>
+                  <div className='w-[48%] '>
+                    <Input text="First Name *" name="user_name" placeholder="Enter your first name"/>
+                  </div>
+                  <div className='w-[48%]'>
+                    <Input text="Last Name *" name="user_name" placeholder="Enter your last name"/>
+                  </div>
+                  <div className='w-full my-5'> 
+                    <Input text="Email *" name="user_email" placeholder="Enter your email"/>
+                  </div>
+                  <div className='w-full relative'> 
+                  <h4 className={`font-dm font-bold text-sm   text-secondary py-1 px-5 inline absolute -top-4 left-5 ${darkData ? "bg-[#F0EBD8]" : "bg-white"}`}>Message</h4>
+                    <textarea placeholder='Enter your message' name="message" className='w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
 
-        
-             <form ref={form} onSubmit={sendEmail}>
-            <Flex className='lg:w-[48%] flex-wrap justify-between px-4 md:px-0'>
-                <div className='w-[48%] '>
-                  <Input text="First Name *" name="user_name" placeholder="Enter your first name"/>
-                </div>
-                <div className='w-[48%]'>
-                  <Input text="Last Name *" name="user_name" placeholder="Enter your last name"/>
-                </div>
-                <div className='w-full my-5'> 
-                  <Input text="Email *" name="user_email" placeholder="Enter your email"/>
-                </div>
-                <div className='w-full relative'> 
-                <h4 className={`font-dm font-bold text-sm   text-secondary py-1 px-5 inline absolute -top-4 left-5 ${darkData ? "bg-[#F0EBD8]" : "bg-white"}`}>Message</h4>
-                  <textarea placeholder='Enter your message' name="message" className='w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm'>
+                    </textarea>
+                  </div>
+                  <Flex className="justify-center w-full">
+                    <input type="submit" value="Send" className ={` duration-500 px-6 uppercase cursor-pointer  rounded-[5px] py-2 font-dm font-medium text-base  ${darkData ?"bg-white text-secondary hover:bg-transparent  hover:text-white border border-white " : "bg-secondary text-white hover:bg-transparent  hover:text-secondary border border-secondary "}`}   />
+                  </Flex>
+              </Flex>
 
-                  </textarea>
-                </div>
-                <Flex className="justify-center w-full">
-                  <input type="submit" value="Send" />
-                </Flex>
-            </Flex>
-             </form>
+            </form>
+             
          </Flex>
         </Container>
     </section>
