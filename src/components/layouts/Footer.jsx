@@ -9,6 +9,7 @@ import { AiOutlineTwitter,AiOutlineInstagram} from "react-icons/ai"
 import { FaFacebookF} from "react-icons/fa"
 import { BiLogoLinkedin} from "react-icons/bi"
 import { useSelector } from 'react-redux'
+import { Link } from 'react-scroll'
 
 function Footer() {
   let darkData = useSelector((state)=>state.dark.darkitem)
@@ -42,10 +43,56 @@ function Footer() {
                 <div className='md:w-2/12 '>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>Menu</h3>
                   <ul>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>About</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Protpolio</li>
+                      <Link 
+                        to="home" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-100} 
+                        duration={2000} 
+                      >
+                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
+                    </Link>
+
+                      <Link 
+                        to="service" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-100} 
+                        duration={2000} 
+                      >
+                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
+                    </Link>
+
+                      <Link 
+                        to="protfolio" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-100} 
+                        duration={2000} 
+                      >
+                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Protfolio</li>
+                    </Link>
+
+                      <Link 
+                        to="blog" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-100} 
+                        duration={2000} 
+                      >
+                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Blog</li>
+                    </Link>
+
+                      <Link 
+                        to="contact" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-100} 
+                        duration={2000} 
+                      >
+                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Contact</li>
+                    </Link>
+                    
                   </ul>
                 </div>
 

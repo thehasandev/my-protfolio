@@ -107,7 +107,7 @@ function Contact() {
                       </Flex>
                       <Flex className="items-center gap-x-5">
                         <CiLocationOn size={30} className={`${darkData ? "text-white" : "text-secondary"}`}/>
-                        <p  className={`font-dm font-medium text-base  ${darkData ? "text-white":"text-secondary"}`}>thehasandev@gmail.com</p>
+                        <p  className={`font-dm font-medium text-base  ${darkData ? "text-white":"text-secondary"}`}>Dhaka,Narsingdi</p>
                       </Flex>
                        
                     </div>
