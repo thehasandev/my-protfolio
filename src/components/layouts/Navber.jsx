@@ -248,8 +248,15 @@ function Navber() {
 
                    <CgMenuRight size={25} className={` md:hidden cursor-pointer ${darkData && "text-white"}   ${color ? "text-white": "text-secondary"}`} onClick={()=>{setOpen(!open)}}/>
                   
-                  
+                   <Link 
+                      to="contact" 
+                      spy={true} 
+                      smooth={true} 
+                      offset={-100} 
+                      duration={2000} 
+                    >
                    <button className={`hover:bg-transparent hidden md:block   duration-500 px-6  rounded-[5px] py-2 font-dm font-medium text-base   ${color ? "bg-white text-secondary hover:text-white border border-white" : darkData ? "text-secondary bg-white hover:text-white border border-white" : "bg-secondary text-white hover:text-secondary border border-secondary"}`}>Contract</button>
+                </Link>
                 </div>
             </Flex>
         </Container>
