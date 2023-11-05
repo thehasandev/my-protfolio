@@ -82,7 +82,7 @@ let data =[
     },
  
     {
-        title : "game",
+        title : "gameFirebase",
         url:"./images/g3.png",
         type : ["Taillwind Css","Game","React Js"]
     },
