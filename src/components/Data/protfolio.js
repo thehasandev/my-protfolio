@@ -80,6 +80,12 @@ let data =[
         url:"./images/o.png",
         type : ["Taillwind Css","Javascript","React Js"]
     },
+ 
+    {
+        title : "game",
+        url:"./images/g3.png",
+        type : ["Taillwind Css","Game","React Js"]
+    },
 
 ]
 
