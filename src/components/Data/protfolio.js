@@ -41,6 +41,11 @@ let data =[
         type : ["Html Css","Taillwind Css","Javascript","React Js"]
     },
     {
+        title : "tonix",
+        url:"./images/t1.png",
+        type : ["Html Css","Taillwind Css","Javascript","React Js"]
+    },
+    {
         title : "eduford",
         url:"./images/h.png",
         type : ["Html Css","Bootstrap"]

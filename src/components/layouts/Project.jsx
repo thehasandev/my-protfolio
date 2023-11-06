@@ -260,7 +260,7 @@ function Project() {
                         <Link to="https://github.com/thehasandev/bangle-fourse.git">View Code</Link>
                         </p>
                         <p className='font-dm font-medium text-white text-lg '>
-                          <Link to="https://security-gurd.netlify.app">Live Project</Link>
+                          <Link to="https://bangel-force.netlify.app">Live Project</Link>
                         </p>
                      </div>
                    </div>
@@ -301,7 +301,7 @@ function Project() {
                                     </Flex>
                                 </Link>
 
-                                <Link to="https://security-gurd.netlify.app">
+                                <Link to="https://bangel-force.netlify.app">
                                     <Flex className='items-center gap-x-2'>
                                         <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
