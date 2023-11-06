@@ -190,7 +190,7 @@ function Project() {
                            <Link to="https://github.com/thehasandev/e_commerce_tronix.git">View Code</Link>
                         </p>
                         <p className='font-dm font-medium text-white text-lg '>
-                        <Link to="https://daraz-ecommarce.netlify.app">Live Project</Link>
+                        <Link to="https://tronix-ecommarce.netlify.app">Live Project</Link>
                         </p>
                      </div>
                    </div>
@@ -224,14 +224,14 @@ function Project() {
 
 
                         <Flex className="justify-center items-center gap-x-4 pt-8 ">
-                                <Link to="https://github.com/thehasandev/daraz.git">
+                                <Link to="https://github.com/thehasandev/e_commerce_tronix.git">
                                     <Flex className='items-center gap-x-2'>
                                         <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Code</p>
                                         <AiFillGithub size={30}/>
                                     </Flex>
                                 </Link>
 
-                                <Link to="https://daraz-ecommarce.netlify.app">
+                                <Link to="https://tronix-ecommarce.netlify.app">
                                     <Flex className='items-center gap-x-2'>
                                         <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
