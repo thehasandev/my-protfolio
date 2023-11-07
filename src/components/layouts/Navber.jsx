@@ -7,10 +7,12 @@ import Logo from "../../assets/Document from Hasan (1).jpg"
 import Image from '../common/Image'
 import {CgMenuRight} from "react-icons/cg"
 import { Link } from 'react-scroll';
+
 import {CiLight,CiDark} from "react-icons/ci"
 
 import { useDispatch, useSelector } from 'react-redux'
 import { darkTrue } from '../../slices/darkSlices'
+import { Link as Links } from 'react-router-dom'
 
 function Navber() {
   let darkData = useSelector((state)=>state.dark.darkitem)
@@ -65,17 +67,13 @@ function Navber() {
                 <div className={`w-[40%] hidden md:block`}>
                  
                   <ul className={`flex   justify-center   gap-x-10  `}>
-                    <Link 
-                      to="home" 
-                      spy={true} 
-                      smooth={true} 
-                      offset={-100} 
-                      duration={2000} 
-                    >
+                    <Links to='/'>
                       <li onClick={()=>setDown(true)} className={`font-dm cursor-pointer text-white text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-white hover:text-white after:bg-white" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Home</li>
+                    </Links>
+                 
               
         
-                    </Link>
+                   
 
                     <Link 
                       to="service" 
