@@ -50,7 +50,7 @@ function Footer() {
                         offset={-100} 
                         duration={2000} 
                       >
-                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
+                       <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Home</li>
                     </Link>
 
                       <Link 
@@ -60,7 +60,7 @@ function Footer() {
                         offset={-100} 
                         duration={2000} 
                       >
-                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
+                       <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Service</li>
                     </Link>
 
                       <Link 
@@ -70,7 +70,7 @@ function Footer() {
                         offset={-100} 
                         duration={2000} 
                       >
-                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Protfolio</li>
+                       <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Protfolio</li>
                     </Link>
 
                       <Link 
@@ -80,7 +80,7 @@ function Footer() {
                         offset={-100} 
                         duration={2000} 
                       >
-                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Blog</li>
+                       <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Blog</li>
                     </Link>
 
                       <Link 
@@ -90,7 +90,7 @@ function Footer() {
                         offset={-100} 
                         duration={2000} 
                       >
-                       <li className='font-dm cursor-pointer text-base font-normal text-white '>Contact</li>
+                       <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Contact</li>
                     </Link>
                     
                   </ul>
@@ -99,20 +99,20 @@ function Footer() {
                 <div className='md:w-2/12 '>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>Service</h3>
                   <ul>
-                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Home</li>
-                  <li className='font-dm cursor-pointer text-base font-normal text-white '>About</li>
-                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Service</li>
-                  <li className='font-dm cursor-pointer text-base font-normal text-white '>Protpolio</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Home</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>About</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Service</li>
+                  <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Protpolio</li>
                   </ul>
                 </div>
 
                 <div className='md:w-2/12  hidden md:block'>
                   <h3 className='font-dm font-bold text-lg text-white mb-5 uppercase'>BLOG</h3>
                   <ul>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Portfolio</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Personal Blog</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Photo Blogging</li>
-                    <li className='font-dm cursor-pointer text-base font-normal text-white '>Prasad Theme</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Portfolio</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Personal Blog</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Photo Blogging</li>
+                    <li className='font-dm cursor-pointer text-base font-normal text-white mb-1'>Prasad Theme</li>
                   </ul>
                 </div>
 

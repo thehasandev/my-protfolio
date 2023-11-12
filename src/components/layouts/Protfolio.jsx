@@ -35,7 +35,7 @@ function Protfolio() {
    
   }
   return (
-    <section className={`md:py-[120px] py-[80px]  ${darkData ? "bg-secondary" : "bg-white"}`} id='protfolio'>
+    <section className={`  ${darkData ? "bg-secondary" : "bg-transparent"}`} id='protfolio'>
       <Container>
       <h2 className={`font-dm font-bold text-center  text-[30px] mb-5  ${darkData ? "text-white" : "text-secondary"}`}>My Protfolio </h2> 
          <ul className='flex  justify-center md:gap-x-10 gap-x-2 flex-wrap'>
@@ -66,7 +66,7 @@ function Protfolio() {
       
           
           
-        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[450px] md:bg-white py-5 rounded-[5px] overflow-y-scroll">
+        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[450px] md:bg-transparent py-5 rounded-[5px] overflow-y-scroll">
 
           {
             filterProtfolio.length ?

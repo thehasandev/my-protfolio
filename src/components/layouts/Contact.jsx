@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import Container from '../common/Container'
 import Input from '../common/Input'
 import Flex from '../common/Flex'
-import Button from '../common/Button'
+import BackToUp from '@uiw/react-back-to-top';
 import {GoProjectRoadmap} from "react-icons/go"
 import {PiUsersThreeLight} from "react-icons/pi"
 import {GiReturnArrow} from "react-icons/gi"
@@ -11,6 +11,7 @@ import {GiReturnArrow} from "react-icons/gi"
 import CountUp from 'react-countup';
 import { AiTwotonePhone,AiOutlineMail } from 'react-icons/ai'
 import { CiLocationOn } from 'react-icons/ci'
+import { BsFillAirplaneFill } from 'react-icons/bs'
 import { useSelector } from 'react-redux'
 import emailjs from '@emailjs/browser';
 
@@ -143,6 +144,7 @@ function Contact() {
             </form>
              
          </Flex>
+        <BackToUp><BsFillAirplaneFill size={16}/></BackToUp>
         </Container>
     </section>
 

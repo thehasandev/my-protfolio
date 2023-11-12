@@ -16,7 +16,7 @@ function About() {
                <div className='md:w-[50%] w-[360px] mx-auto md:mx-0 px-4 xl:px-0'>
                <h2 className={`font-dm font-bold  text-xl ${darkData ? "text-white":"text-secondary"}`}>About Me</h2> 
                <h2 className={`font-dm font-bold text-lg md:text-xl md:w-8/12   my-2 ${darkData ? "text-white " : "text-secondary "}`}>A dedicated Full Stack Web Developer based in Market Place</h2>
-                <p className={`font-dm font-normal  text-sm md:text-base md:w-8/12  ${darkData ? "text-white " : "text-primary "}`}>
+                <p className={`font-dm font-normal  text-sm md:text-base mt-5 md:w-8/12  ${darkData ? "text-white " : "text-secondary "}`}>
                 Hello! My name is Hasan. I'm a Full Stack web developer specializing in ReactJs, JavaScript, TypeScript, Node.js, Angular, and MongoDB. My focus is on creating responsive web pages and dynamic websites. Currently, I have professional experience in React.js. Recently, I developed an e-commerce website named Daraz, which showcases my capabilities and sets me apart from others in the field.
 </p>
                </div>

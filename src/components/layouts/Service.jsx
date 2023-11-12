@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux'
 function Service() {
   let darkData = useSelector((state)=>state.dark.darkitem)
   return (
-    <section className='md:my-[120px] my-[80px]' id='service'> 
+    <section className='md:my-[120px] my-[100px]' id='service'> 
       <Container>
       <h2 className={`font-dm font-bold  mb-8 text-[30px] text-center ${darkData ? "text-white" : "text-secondary"}`}>My Service</h2>
        <div className='flex flex-wrap md:gap-16  gap-5 justify-center'>

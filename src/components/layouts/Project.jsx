@@ -60,7 +60,7 @@ function Project() {
 
                    <div className='md:w-[55%] md:text-left text-center'>
                    <h2 className={`font-dm font-bold mb-2 md:mb-0  text-[20px] ${darkData ? "text-white":"text-secondary"}`}>Orebi Ecommarce</h2> 
-                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-primary"}`}>
+                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-secondary"}`}>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -69,19 +69,19 @@ function Project() {
                    
                     <Flex className="md:gap-x-10  flex-wrap mt-4 md:mt-0 gap-2 justify-center">
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>React</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>React</p>
                          </div>
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Tailwind</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Tailwind</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Javascript</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Javascript</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Redux</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Redux</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semiboldfont-lg text-secondary '>Context Api</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Context Api</p>
                          </div>
                     </Flex>
 
@@ -89,14 +89,14 @@ function Project() {
                         <Flex className="justify-center items-center gap-x-4 pt-8 ">
                                 <Link to="https://github.com/thehasandev/ecommerce-orebi.git">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Code</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Code</p>
                                         <AiFillGithub size={30}/>
                                     </Flex>
                                 </Link>
 
                                 <Link to="https://ecommerce-orebi.netlify.app/">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
                                     </Flex>
                                 </Link>
@@ -129,7 +129,7 @@ function Project() {
 
                    <div className='md:w-[55%] md:text-left text-center'>
                    <h2 className={`font-dm font-bold mb-2 md:mb-0  text-[20px] ${darkData ? "text-white":"text-secondary"}`}>Daraz Ecommarce</h2> 
-                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-primary"}`}>
+                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-secondary"}`}>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -138,19 +138,19 @@ function Project() {
                    
                     <Flex className="md:gap-x-10  flex-wrap mt-4 md:mt-0 gap-2 justify-center">
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>React</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>React</p>
                          </div>
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Tailwind</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Tailwind</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Javascript</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Javascript</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Redux</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Redux</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semiboldfont-lg text-secondary '>Context Api</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Context Api</p>
                          </div>
                     </Flex>
 
@@ -158,14 +158,14 @@ function Project() {
                         <Flex className="justify-center items-center gap-x-4 pt-8 ">
                                 <Link to="https://github.com/thehasandev/daraz.git">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Code</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Code</p>
                                         <AiFillGithub size={30}/>
                                     </Flex>
                                 </Link>
 
                                 <Link to="https://daraz-ecommarce.netlify.app">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
                                     </Flex>
                                 </Link>
@@ -197,7 +197,7 @@ function Project() {
 
                    <div className='md:w-[55%] md:text-left text-center'>
                    <h2 className={`font-dm font-bold mb-2 md:mb-0  text-[20px] ${darkData ? "text-white":"text-secondary"}`}>Tronix Ecommarce</h2> 
-                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-primary"}`}>
+                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-secondary"}`}>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -206,19 +206,19 @@ function Project() {
                    
                     <Flex className="md:gap-x-10  flex-wrap mt-4 md:mt-0 gap-2 justify-center">
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>React</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>React</p>
                          </div>
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Tailwind</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Tailwind</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Javascript</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Javascript</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Redux</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Redux</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semiboldfont-lg text-secondary '>Context Api</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Context Api</p>
                          </div>
                     </Flex>
 
@@ -226,14 +226,14 @@ function Project() {
                         <Flex className="justify-center items-center gap-x-4 pt-8 ">
                                 <Link to="https://github.com/thehasandev/e_commerce_tronix.git">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Code</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Code</p>
                                         <AiFillGithub size={30}/>
                                     </Flex>
                                 </Link>
 
                                 <Link to="https://tronix-ecommarce.netlify.app">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
                                     </Flex>
                                 </Link>
@@ -267,7 +267,7 @@ function Project() {
 
                    <div className='md:w-[55%] md:text-left text-center'>
                    <h2 className={`font-dm font-bold mb-2 md:mb-0  text-[20px] ${darkData ? "text-white":"text-secondary"}`}>Security Gurd Website</h2> 
-                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-primary"}`}>
+                    <p className={`font-dm font-normal md:font-normal text-sm md:text-base mt-5  mx-auto text-center md:text-left md:pl-0 md:mx-0 w-8/12 ${darkData ? "text-white":"text-secondary"}`}>
                     Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.
                     </p>
 
@@ -276,19 +276,19 @@ function Project() {
                    
                     <Flex className="md:gap-x-10  flex-wrap mt-4 md:mt-0 gap-2 justify-center">
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>React</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>React</p>
                          </div>
                          <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Tailwind</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Tailwind</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Javascript</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Javascript</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semibold font-lg text-secondary '>Redux</p>
+                             <p className='font-dm  font-semibold text-lg text-secondary '>Redux</p>
                          </div>
                           <div className={`px-4 py-2 bg-white  rounded-[5px] ${darkData ? "shadow-0 " : "shadow-xl shadow-gray-400/30"}`}>
-                             <p className='font-dm font-semiboldfont-lg text-secondary '>Context Api</p>
+                             <p className='font-dm font-semibold text-lg text-secondary '>Context Api</p>
                          </div>
                     </Flex>
 
@@ -296,14 +296,14 @@ function Project() {
                         <Flex className="justify-center items-center gap-x-4 pt-8 ">
                               <Link to="https://github.com/thehasandev/bangle-fourse.git">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Code</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Code</p>
                                         <AiFillGithub size={30}/>
                                     </Flex>
                                 </Link>
 
                                 <Link to="https://bangel-force.netlify.app">
                                     <Flex className='items-center gap-x-2'>
-                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-primary"}`}>Live Demo</p>
+                                        <p className={`font-dm font-medium font-base  ${darkData ? "text-white":"text-secondary"}`}>Live Demo</p>
                                         <FiExternalLink size={25}/>
                                     </Flex>
                                 </Link>

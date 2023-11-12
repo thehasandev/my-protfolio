@@ -19,19 +19,17 @@ function Home() {
   let darkData = useSelector((state)=>state.dark.darkitem)
  
   return (
-    <div className={`${darkData? "bg-secondary text-white" : "bg-white"}`}>  
+    <div className={`${darkData? "bg-secondary text-white" : "bg-gradient-to-r from-[#abecd6] to-[#5e75f9]"}`}>  
       <Hero/>
       <Skill/>
-      <Service/>
       <Project/>
-      <ProblemSlove/>
+      <Service/>
       <Protfolio/>
+      <ProblemSlove/>
       <Blog/>
       <Testomonia/>
       <About/>
-      <Contact/>
-     
-       
+      <Contact/> 
     </div>
   )
 }
