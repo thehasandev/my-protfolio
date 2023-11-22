@@ -95,7 +95,7 @@ function Skill() {
                     </li>
                    
                </ul>
-                <Flex className="flex-wrap gap-10  h-[200px] overflow-y-scroll ">
+                <Flex className="flex-wrap gap-10 scroll h-[200px] overflow-y-scroll ">
                    {
 
         data.map((item,index)=>{

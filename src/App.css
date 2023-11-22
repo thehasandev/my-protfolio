@@ -1,0 +1,8 @@
+.scroll::-webkit-scrollbar{
+    width: 6px;
+    background: gray;
+}
+.scroll::-webkit-scrollbar-thumb{
+    width: 6px;
+    background: linear-gradient(transparent,#ffff);
+}

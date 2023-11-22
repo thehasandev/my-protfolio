@@ -66,7 +66,7 @@ function Protfolio() {
       
           
           
-        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[450px] md:bg-transparent py-5 rounded-[5px] overflow-y-scroll">
+        <Flex className="gap-10 flex-wrap justify-center mt-6  h-[450px] md:bg-transparent py-5 rounded-[5px] scroll overflow-y-scroll">
 
           {
             filterProtfolio.length ?
