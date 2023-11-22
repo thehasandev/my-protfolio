@@ -147,7 +147,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-secondary text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Home</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>Home</li>
              
       
                   </Link>
@@ -160,7 +160,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointertext-secondary  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Service</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>Service</li>
                  
       
                   </Link>
@@ -174,7 +174,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointertext-secondary  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Protfolio</li>
+                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>Protfolio</li>
                  
       
                   </Link>
@@ -186,7 +186,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-secondary text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Blog</li>
+                    <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>Blog</li>
                   
       
                   </Link>
@@ -198,7 +198,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-secondary text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>Contact</li>
+                   <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>Contact</li>
                      
       
                   </Link>
@@ -209,7 +209,7 @@ function Navber() {
                     offset={-100} 
                     duration={2000} 
                   >
-               <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer  text-secondary text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 ${color ? "md:text-secondary hover:text-secondary after:bg-secondary" : darkData ? "md:text-white after:bg-white" : "md:text-secondary hover:text-secondary after:bg-secondary"}`}>About</li>
+               <li onClick={()=>setOpen(false)} className={`font-dm cursor-pointer text-base font-semibold ${darkData ? "text-white":"text-secondary"}`}>About</li>
                    
       
                   </Link>
@@ -225,19 +225,14 @@ function Navber() {
               
                  <MdOutlineDarkMode className={darkData ? "text-white cursor-pointer": "text-secondary cursor-pointer"} onClick={()=>{setDark(true)}} size={25}/>
                  <MdOutlineLightMode className={darkData ? "text-white cursor-pointer": "text-secondary cursor-pointer"} onClick={()=>{setDark(false)}}  size={25}/>
-                  {/* <label className="relative inline-flex items-center cursor-pointer ">
-                    <input type="checkbox" checked={input}  onChange={handleInput} className="sr-only peer "/>
-                    <div className={` w-12 h-6 border  peer-focus:outline-none    rounded-full peer  peer-checked:after:translate-x-full  peer-checked:-z-50  after:content-[''] after:absolute after:top-[2px] after:left-[4px]  after:border-secondary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-primary  focus:outline-0 peer-checked:bg-white ${color ? "border-secondary after:bg-secondary z-30" : "border-secondary after:bg-secondary "}`}></div>
-                  <CiLight size={18} className={`absolute top-1/2 -translate-y-1/2 left-1 font-bold z-10 text-secondary  `}/>
-                  <CiDark size={18} className={`absolute top-1/2 -translate-y-1/2 right-1 font-bold  `}/>
-                  </label> */}
+                  
 
 
            
 
 
 
-                   <CgMenuRight size={25} className={` md:hidden cursor-pointer ${darkData && "text-secondary"}   `} onClick={()=>{setOpen(!open)}}/>
+                   <CgMenuRight size={25} className={` md:hidden cursor-pointer ${darkData && "text-white"}   `} onClick={()=>{setOpen(!open)}}/>
                   
                    <Link 
                       to="contact" 
