@@ -13,14 +13,16 @@ import {CiLight,CiDark} from "react-icons/ci"
 import { useDispatch, useSelector } from 'react-redux'
 import { darkTrue } from '../../slices/darkSlices'
 import { Link as Links } from 'react-router-dom'
+import { MdOutlineDarkMode,MdOutlineLightMode  } from "react-icons/md";
 
 function Navber() {
   let darkData = useSelector((state)=>state.dark.darkitem)
-
+  
+  let [dark,setDark] = useState(false)
  
   const [open,setOpen] =useState(false)
   const [color,setColor] = useState(false)
-  const [down,setDown] = useState(false)
+
 
   const [input,setInput] = useState("")
 
@@ -34,7 +36,7 @@ function Navber() {
 
   const dispatch = useDispatch()
 
-  dispatch(darkTrue(input))
+  dispatch(darkTrue(dark))
 
  
 
@@ -221,15 +223,14 @@ function Navber() {
 
                 <div className={`w-[250px] flex justify-end items-center gap-x-5 ${darkData && "text-black"}`}>
               
-            
-                  <label className="relative inline-flex items-center cursor-pointer ">
+                 <MdOutlineDarkMode className={darkData ? "text-white cursor-pointer": "text-secondary cursor-pointer"} onClick={()=>{setDark(true)}} size={25}/>
+                 <MdOutlineLightMode className={darkData ? "text-white cursor-pointer": "text-secondary cursor-pointer"} onClick={()=>{setDark(false)}}  size={25}/>
+                  {/* <label className="relative inline-flex items-center cursor-pointer ">
                     <input type="checkbox" checked={input}  onChange={handleInput} className="sr-only peer "/>
                     <div className={` w-12 h-6 border  peer-focus:outline-none    rounded-full peer  peer-checked:after:translate-x-full  peer-checked:-z-50  after:content-[''] after:absolute after:top-[2px] after:left-[4px]  after:border-secondary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-primary  focus:outline-0 peer-checked:bg-white ${color ? "border-secondary after:bg-secondary z-30" : "border-secondary after:bg-secondary "}`}></div>
                   <CiLight size={18} className={`absolute top-1/2 -translate-y-1/2 left-1 font-bold z-10 text-secondary  `}/>
                   <CiDark size={18} className={`absolute top-1/2 -translate-y-1/2 right-1 font-bold  `}/>
-                  
-                    
-                  </label>
+                  </label> */}
 
 
            
