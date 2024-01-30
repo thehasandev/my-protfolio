@@ -91,8 +91,6 @@ function Service() {
               <ServiceList text="Brand Management"/>
               <ServiceList text="Brand Metrics"/>
           </div>
-
-
        </div>
       </Container>
     </section>

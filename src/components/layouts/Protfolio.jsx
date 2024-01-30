@@ -29,10 +29,6 @@ function Protfolio() {
       ))
       setFilterProtfolio(arr)
       
-
-
-
-   
   }
   return (
     <section className={`  ${darkData ? "bg-secondary" : "bg-transparent"}`} id='protfolio'>
@@ -84,9 +80,6 @@ function Protfolio() {
                 </div>
   
               }
-             
-              
-            
             )
             :
             data.map((item,index)=>{
