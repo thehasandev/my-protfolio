@@ -7,7 +7,7 @@ import ProjectOne from "../../assets/orebiBanner.png"
 import ProjectTwo from "../../assets/daraz.png"
 import ProjectThree from "../../assets/security.png"
 import ProjectTronix from "../../assets/tronix.png"
-import Chatinging_app from "../../assets/chating.png"
+import Chatinging_app from "../../assets/chating2.png"
 
 import { FiExternalLink } from 'react-icons/fi'
 import { AiFillGithub } from 'react-icons/ai'
