@@ -1,12 +1,14 @@
-import React from 'react'
-import {FiChevronsRight}from "react-icons/fi"
-import { useSelector } from 'react-redux'
+import { FiChevronsRight } from "react-icons/fi";
 
-function ServiceList({text,className}) {
-  let darkData = useSelector((state)=>state.dark.darkitem)
+function ServiceList({ text, className }) {
   return (
-    <p className={`font-dm font-normal text-base text-center  flex items-center gap-x-5 pl-16 ${className} ${darkData ? "text-secondary": "text-secondary group-hover:text-secondary"}`}><FiChevronsRight/>{text}</p>
-  )
+    <p
+      className={`${className}font-dm font-normal text-base text-center cursor-pointer  flex items-center gap-x-5 pl-16 text-secondary group-hover:text-secondary`}
+    >
+      <FiChevronsRight />
+      {text}
+    </p>
+  );
 }
 
-export default ServiceList
+export default ServiceList;

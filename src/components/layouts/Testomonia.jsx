@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Container from '../common/Container'
 import Flex from '../common/Flex'
 import Image from '../common/Image'
@@ -9,11 +9,11 @@ import { AiFillStar } from 'react-icons/ai'
 
 import "slick-carousel/slick/slick.css"; 
 import Slider from "react-slick";
-import { useSelector } from 'react-redux'
+
 
 
 function Testomonia() {
-    let darkData = useSelector((state)=>state.dark.darkitem)
+    
     const testomniaSettings = {
         infinite: true,
         speed: 1000,
@@ -61,7 +61,7 @@ function Testomonia() {
   return (
     <section className='my-[120px]'>
         <Container>
-           <h2 className={`font-dm font-bold  mb-8 text-[30px] text-center ${darkData ? "text-white": "text-secondary"}`}>Client Speak</h2>
+           <h2 className={`font-dm font-bold  mb-8 text-[30px] text-center text-secondary`}>Client Speak</h2>
             
            
             
