@@ -8,7 +8,7 @@ function ProblemSlove() {
     <section className="md:mt-[120px] mt-[100px] px-4 xl:px-0">
       <Container>
         <h2
-          className={`font-dm font-bold  mb-8 text-[30px] text-center text-secondary`}
+          className={`font-dm font-bold  mb-8 text-[30px] text-center text-secondary dark:text-white`}
         >
           What sets me apart
         </h2>
@@ -20,25 +20,25 @@ function ProblemSlove() {
           </div>
 
           <div className="lg:w-[40%]">
-            <h2 className={`font-dm font-bold  text-xl mt-5  text-secondary`}>
+            <h2 className={`font-dm font-bold  text-xl mt-5  text-secondary dark:text-white`}>
               Problem-Solving Prowess, innovative Solutions and Collaborative
               Mindset
             </h2>
             <p
-              className={`font-dm font-normal  text-base mt-5  text-secondary`}
+              className={`font-dm font-normal  text-base mt-5  text-secondary dark:text-white`}
             >
               I thrive on finding creative and innovative solutions to complex
               problems, pushing the boundaries of what's possible in web
               development.
             </p>
             <p
-              className={`font-dm font-normal  text-base mt-5  text-secondary`}
+              className={`font-dm font-normal  text-base mt-5  text-secondary dark:text-white`}
             >
               tackling complex challenges and finding elegant solutions, turning
               obstacles into opportunities.
             </p>
             <p
-              className={`font-dm font-normal  text-base mt-5  text-secondary`}
+              className={`font-dm font-normal  text-base mt-5  text-secondary dark:text-white`}
             >
               also I believe in the power of teamwork and collaboration, making
               me an excellent addition to any development project.

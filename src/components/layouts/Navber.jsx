@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Container from "../common/Container";
 import Flex from "../common/Flex";
@@ -8,24 +8,13 @@ import Image from "../common/Image";
 import { CgMenuRight } from "react-icons/cg";
 import { Link } from "react-scroll";
 
-import { CiLight, CiDark } from "react-icons/ci";
-
-import { useDispatch, useSelector } from "react-redux";
-
 import { Link as Links } from "react-router-dom";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 function Navber() {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
-
-  const [input, setInput] = useState("");
-
-  const handleInput = (e) => {
-    setInput(e.target.checked);
-  };
-
-  const dispatch = useDispatch();
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,10 +31,25 @@ function Navber() {
     };
   }, []);
 
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  // const handleDark = () => {
+  //   setTheme("dark");
+  // };
+  // const handleLight = () => {
+  //   setTheme("light");
+  // };
+
   return (
     <section
       className={`fixed w-full z-50  ${
-        color ? "bg-white" : "bg-transparent"
+        color ? "bg-white dark:bg-dark-300" : "bg-transparent"
       } px-4 xl:px-0`}
     >
       <Container>
@@ -60,8 +64,7 @@ function Navber() {
             <ul className={`flex   justify-center   gap-x-10  `}>
               <Links to="/">
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Home
                 </li>
@@ -75,8 +78,7 @@ function Navber() {
                 duration={2000}
               >
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Service
                 </li>
@@ -90,8 +92,7 @@ function Navber() {
                 duration={2000}
               >
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Protfolio
                 </li>
@@ -105,8 +106,7 @@ function Navber() {
                 duration={2000}
               >
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Blog
                 </li>
@@ -120,8 +120,7 @@ function Navber() {
                 duration={2000}
               >
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Contact
                 </li>
@@ -135,8 +134,7 @@ function Navber() {
                 duration={2000}
               >
                 <li
-                  onClick={() => setDown(true)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   About
                 </li>
@@ -147,7 +145,7 @@ function Navber() {
           {/* Responsive Menu  */}
           <div className="md:hidden block">
             <ul
-              className={` absolute flex flex-col items-center gap-y-4 py-5 top-16 left-0 w-full ${
+              className={` absolute flex flex-col items-center gap-y-4 py-5 top-16 left-0 w-full bg-white ${
                 open ? "rotate-x-0" : "rotate-x-90"
               }  duration-500`}
             >
@@ -160,7 +158,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Home
                 </li>
@@ -175,7 +173,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Service
                 </li>
@@ -190,7 +188,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Protfolio
                 </li>
@@ -205,7 +203,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Blog
                 </li>
@@ -220,7 +218,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   Contact
                 </li>
@@ -234,7 +232,7 @@ function Navber() {
               >
                 <li
                   onClick={() => setOpen(false)}
-                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary`}
+                  className={`font-dm cursor-pointer  text-base font-semibold  relative after:absolute after:bottom-[-5px] after:left-0 after:h-1 after:w-0  after:rounded-[5px] md:hover:after:w-6 after:duration-300 duration-100 text-secondary md:text-secondary hover:text-secondary after:bg-secondary dark:after:bg-white dark:text-white`}
                 >
                   About
                 </li>
@@ -243,12 +241,38 @@ function Navber() {
           </div>
 
           <div className={`w-[250px] flex justify-end items-center gap-x-5`}>
-            <MdOutlineDarkMode size={25} />
-            <MdOutlineLightMode size={25} />
+            {/* <MdOutlineDarkMode
+              className="cursor-pointer text-secondary dark:text-white"
+              onClick={handleDark}
+              size={25}
+            />
+            <MdOutlineLightMode
+              className="cursor-pointer text-secondary dark:text-white"
+              onClick={handleLight}
+              size={25}
+            /> */}
+            <label className="swap swap-rotate">
+              {/* this hidden checkbox controls the state */}
+              <input type="checkbox" />
+
+              <div
+                onClick={() => setTheme("dark")}
+                className="swap-on fill-current text-secondary dark:text-white"
+              >
+                <MdOutlineLightMode size={25} />
+              </div>
+
+              <div
+                onClick={() => setTheme("light")}
+                className="swap-off fill-current text-secondary dark:text-white"
+              >
+                <MdOutlineDarkMode size={25} />
+              </div>
+            </label>
 
             <CgMenuRight
               size={25}
-              className={` md:hidden cursor-pointer`}
+              className={` md:hidden cursor-pointer  text-secondary `}
               onClick={() => {
                 setOpen(!open);
               }}

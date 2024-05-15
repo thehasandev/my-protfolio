@@ -12,16 +12,16 @@ function About() {
             <Image src={Computer} className="rounded-[10px] shadow-lg" />
           </div>
           <div className="md:w-[50%] w-[360px] mx-auto md:mx-0 px-4 xl:px-0">
-            <h2 className={`font-dm font-bold  text-xl text-secondary`}>
+            <h2 className={`font-dm font-bold  text-xl text-secondary dark:text-white`}>
               About Me
             </h2>
             <h2
-              className={`font-dm font-bold text-lg md:text-xl md:w-8/12   my-2 text-secondary`}
+              className={`font-dm font-bold text-lg md:text-xl md:w-8/12   my-2 text-secondary dark:text-white`}
             >
               A dedicated Full Stack Web Developer based in Market Place
             </h2>
             <p
-              className={`font-dm font-normal  text-sm md:text-base mt-5 md:w-8/12 text-secondary`}
+              className={`font-dm font-normal  text-sm md:text-base mt-5 md:w-8/12 text-secondary dark:text-white`}
             >
               Hello! My name is Hasan. I'm a Full Stack web developer
               specializing in ReactJs, JavaScript, TypeScript, Node.js, Angular,

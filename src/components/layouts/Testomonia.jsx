@@ -49,7 +49,7 @@ function Testomonia() {
             </div>
           ),
           customPaging: i => (
-            <div className='text-secondary text-7xl'>
+            <div className='text-secondary text-7xl dark:text-white'>
               .
             </div>
           )
@@ -61,7 +61,7 @@ function Testomonia() {
   return (
     <section className='my-[120px]'>
         <Container>
-           <h2 className={`font-dm font-bold  mb-8 text-[30px] text-center text-secondary`}>Client Speak</h2>
+           <h2 className={`font-dm font-bold  mb-8 text-[30px] text-center text-secondary dark:text-white`}>Client Speak</h2>
             
            
             

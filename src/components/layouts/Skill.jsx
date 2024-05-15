@@ -40,11 +40,13 @@ function Skill() {
       <Container>
         <Flex className="justify-between flex-col md:flex-row px-4 xl:px-0 gap-y-10">
           <div className="md:w-[40%] ">
-            <h2 className={`font-dm font-bold text-secondary text-[30px] `}>
+            <h2
+              className={`font-dm font-bold text-secondary dark:text-white text-[30px] `}
+            >
               Summary
             </h2>
             <p
-              className={`font-dm font-normal md:font-medium  text-sm md:text-base mt-5  text-secondary`}
+              className={`font-dm font-normal md:font-medium  text-sm md:text-base mt-5  text-secondary dark:text-white`}
             >
               I am a passionate web application and software developer
               specializing in MERN Stack web development. As a frontend
@@ -67,7 +69,7 @@ function Skill() {
           <div className="md:w-[40%] ">
             <div className="flex md:gap-x-10 gap-x-5 items-center mb-5">
               <h2
-                className={`font-dm font-bold  text-lg  lg:text-[30px] text-secondary`}
+                className={`font-dm font-bold  text-lg  lg:text-[30px] text-secondary dark:text-white`}
               >
                 My Skills
               </h2>
@@ -75,7 +77,7 @@ function Skill() {
                 type="text"
                 placeholder="Search in skill..."
                 onChange={handleChange}
-                className="border boreder-secondary px-5 py-2 rounded-[5px] md:w-[180px] placeholder:text-sm placeholder:font-dm placeholder:text-secodary"
+                className="border text-secondary bg-transparent border-secondary dark:text-white dark:border-white outline-none px-5 py-2 rounded-[5px] md:w-[180px] placeholder:text-sm placeholder:font-dm placeholder:text-secondary dark:placeholder:text-white"
               />
             </div>
 
@@ -84,7 +86,7 @@ function Skill() {
                 onClick={() => {
                   handleSubmit("Frontend");
                 }}
-                className="font-dm cursor-pointer text-base hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
+                className="font-dm cursor-pointer text-base dark:text-white text-secondary  hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
               >
                 Frontend
               </li>
@@ -93,7 +95,7 @@ function Skill() {
                 onClick={() => {
                   handleSubmit("Backend");
                 }}
-                className="font-dm cursor-pointer text-base hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
+                className="font-dm cursor-pointer text-base dark:text-white text-secondary hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
               >
                 Backend
               </li>
@@ -102,7 +104,7 @@ function Skill() {
                 onClick={() => {
                   setData(SkillData);
                 }}
-                className="font-dm cursor-pointer text-base hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
+                className="font-dm cursor-pointer text-base dark:text-white text-secondary hover:bg-secondary hover:text-white px-3 py-1 duration-300 rounded-[5px]"
               >
                 All
               </li>

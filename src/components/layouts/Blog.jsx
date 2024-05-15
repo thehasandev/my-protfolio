@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "../common/Container";
 
 import One from "../../assets/daraz.png";
@@ -12,7 +12,7 @@ function Blog() {
     <section id="blog">
       <Container>
         <h2
-          className={`font-dm font-bold  text-[30px] text-center my-16 text-secondary`}
+          className={`font-dm font-bold  text-[30px] text-center my-16 text-secondary dark:text-white`}
         >
           My Blogs
         </h2>

@@ -1,5 +1,5 @@
-import React from 'react'
-import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai"
+
+import { AiFillCaretRight} from "react-icons/ai"
 function NextArrow(props) {
   const {onClick} = props
   return (

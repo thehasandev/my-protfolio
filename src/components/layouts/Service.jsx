@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../common/Container";
 import Image from "../common/Image";
 
@@ -21,7 +20,7 @@ function Service() {
         </h2>
         <div className="flex flex-wrap md:gap-16  gap-5 justify-center">
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px] bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px] bg-[#F0EBD8] duration-500 dark:bg-white hover:bg-transparent group`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Uixi} />
@@ -39,7 +38,7 @@ function Service() {
           </div>
 
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px] bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px] bg-[#F0EBD8] duration-500 hover:bg-transparent group dark:bg-white`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Development} />
@@ -57,7 +56,7 @@ function Service() {
           </div>
 
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group dark:bg-white`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Insolation} />
@@ -75,7 +74,7 @@ function Service() {
           </div>
 
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group dark:bg-white`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Seo} />
@@ -93,7 +92,7 @@ function Service() {
           </div>
 
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group dark:bg-white`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Data} />
@@ -111,7 +110,7 @@ function Service() {
           </div>
 
           <div
-            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group`}
+            className={`w-[300px]  py-8 md:py-16 rounded-[5px]  hidden md:block bg-[#F0EBD8] duration-500 hover:bg-transparent group dark:bg-white`}
           >
             <div className={`w-8 mx-auto bg-secondary p-2 rounded-[5px]`}>
               <Image src={Data} />

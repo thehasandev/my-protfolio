@@ -14,10 +14,10 @@ function Hero() {
   return (
     <section className={`md:py-[160px] py-[80px] `} id="home">
       <Container>
-        <Flex className="flex-col-reverse gap-y-10 lg:flex-row justify-center items-center">
+        <Flex className="flex-col-reverse gap-y-10  lg:flex-row justify-center items-center">
           <div className="md:w-[50%] md:mx-0 mx:auto ">
             <h1
-              className={`font-dm font-bold md:w-[550px] px-4 md:px-0  mx-auto md:mx-0 md:text-3xl text-xl text-secondary `}
+              className={`font-dm font-bold md:w-[550px] px-4 md:px-0  mx-auto md:mx-0 md:text-3xl text-xl dark:text-white text-secondary `}
             >
               HI I'M MOHAMMED HASAN. I AM A <br />{" "}
               <TypeAnimation
@@ -37,7 +37,7 @@ function Hero() {
             </h1>
 
             <p
-              className={`font-dm  my-6 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-secondary font-normal`}
+              className={`font-dm  my-6 md:w-[400px] w-[360px] mx-auto md:mx-0 px-4 xl:px-0 text-sm md:text-lg text-secondary dark:text-white font-normal`}
             >
               As a frontend developer, I bring a strong foundation in HTML, CSS,
               and JavaScript, coupled with deep expertise in React.js

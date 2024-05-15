@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {AiFillCaretLeft} from "react-icons/ai"
 function PrevArrow(props) {
   const {onClick} = props

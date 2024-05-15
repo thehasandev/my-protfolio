@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Container from "../common/Container";
 
 import protfolioData from "../Data/protfolio";
@@ -6,7 +6,7 @@ import protfolioData from "../Data/protfolio";
 import Flex from "../common/Flex";
 import Image from "../common/Image";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+
 
 function Protfolio() {
   const [data, setData] = useState(protfolioData);
@@ -27,7 +27,7 @@ function Protfolio() {
     <section className={`  bg-transparent`} id="protfolio">
       <Container>
         <h2
-          className={`font-dm font-bold text-center  text-[30px] mb-5 text-secondary`}
+          className={`font-dm font-bold text-center  text-[30px] mb-5 text-secondary dark:text-white`}
         >
           My Protfolio
         </h2>
@@ -36,7 +36,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("Html Css");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white dark:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             Html Css
           </li>
@@ -44,7 +44,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("Bootstrap");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white dark:text-white text-secondary  px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             Bootstrap
           </li>
@@ -52,7 +52,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("Taillwind Css");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white dark:text-white text-secondary  px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             Taillwind Css
           </li>
@@ -60,7 +60,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("Javascript");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white px-2 dark:text-white  text-secondary md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             Javascript
           </li>
@@ -68,7 +68,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("React Js");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white px-2 dark:text-white text-secondary  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             React Js
           </li>
@@ -76,7 +76,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("Game");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2 md:px-3  cursor-pointer py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base hover:bg-secondary hover:text-white px-2 md:px-3 dark:text-white  text-secondary  cursor-pointer py-1 duration-300 rounded-[5px]"
           >
             Game
           </li>
@@ -84,7 +84,7 @@ function Protfolio() {
             onClick={() => {
               handleSubmit("");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-base text-secondary hover:bg-secondary hover:text-white px-2 md:px-3 cursor-pointer dark:text-white text-secondary   py-1 duration-300 rounded-[5px]"
           >
             All
           </li>

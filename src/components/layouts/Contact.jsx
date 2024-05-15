@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 import Container from "../common/Container";
 import Input from "../common/Input";
@@ -43,7 +43,7 @@ function Contact() {
       <section className="py-[60px]" id="contact">
         <Container>
           <h2
-            className={`font-dm font-bold  mb-16 text-[30px] text-center text-secondary`}
+            className={`font-dm font-bold  mb-16 text-[30px] text-center text-secondary dark:text-white`}
           >
             Contact Me
           </h2>
@@ -52,7 +52,7 @@ function Contact() {
             <div className="lg:w-[40%] mx-auto xl:mx-0 ">
               <div className="flex gap-5 flex-wrap md:flex-nowrap">
                 <div
-                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  bg-[#1D2D44] text-white`}
+                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  bg-[#1D2D44] dark:bg-secondary text-white`}
                 >
                   <Flex className="justify-center">
                     <GiReturnArrow size={40} />
@@ -74,7 +74,7 @@ function Contact() {
                 </div>
 
                 <div
-                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  bg-[#1D2D44] text-white`}
+                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center  bg-[#1D2D44] dark:bg-secondary text-white`}
                 >
                   <Flex className="justify-center">
                     <PiUsersThreeLight size={50} />
@@ -99,7 +99,7 @@ function Contact() {
 
               <div className="flex flex-wrap md:flex-nowrap md:gap-5 mt-5  md:w-full">
                 <div
-                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center bg-[#1D2D44] text-white`}
+                  className={`'md:w-96 w-[360px]  mx-auto   py-10  rounded-[5px]  text-center bg-[#1D2D44] dark:bg-secondary text-white`}
                 >
                   <Flex className="justify-center">
                     <GoProjectRoadmap size={50} />
@@ -122,25 +122,34 @@ function Contact() {
 
                 <div className="md:w-96 w-[360px] mx-auto    py-10">
                   <Flex className="items-center gap-x-5">
-                    <AiTwotonePhone size={30} className={`text-secondary`} />
+                    <AiTwotonePhone
+                      size={30}
+                      className={`text-secondary dark:text-white`}
+                    />
                     <p
-                      className={`font-dm font-medium text-base  text-secondary`}
+                      className={`font-dm font-medium text-base  text-secondary dark:text-white`}
                     >
                       01764262634
                     </p>
                   </Flex>
                   <Flex className="items-center gap-x-5 my-4">
-                    <AiOutlineMail size={30} className={`text-secondary`} />
+                    <AiOutlineMail
+                      size={30}
+                      className={`text-secondary dark:text-white`}
+                    />
                     <p
-                      className={`font-dm font-medium text-base  text-secondary`}
+                      className={`font-dm font-medium text-base  text-secondary dark:text-white`}
                     >
                       thehasandev@gmail.com
                     </p>
                   </Flex>
                   <Flex className="items-center gap-x-5">
-                    <CiLocationOn size={30} className={`text-secondary`} />
+                    <CiLocationOn
+                      size={30}
+                      className={`text-secondary dark:text-white`}
+                    />
                     <p
-                      className={`font-dm font-medium text-base  text-secondary`}
+                      className={`font-dm font-medium text-base  text-secondary dark:text-white`}
                     >
                       Dhaka,Narsingdi
                     </p>
@@ -174,14 +183,14 @@ function Contact() {
                 </div>
                 <div className="w-full relative">
                   <h4
-                    className={`font-dm font-bold text-sm   text-secondary py-1 px-5 inline absolute -top-4 left-5 bg-white`}
+                    className={`font-dm font-bold text-sm   text-secondary dark:text-secondary py-1 px-5 inline absolute -top-4 left-5 bg-white`}
                   >
                     Message
                   </h4>
                   <textarea
                     placeholder="Enter your message"
                     name="message"
-                    className="w-full border text-secondary border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm"
+                    className="w-full border text-secondary dark:text-secondary dark:bg-transparent border-solid border-gray-400 rounded-[5px]  py-5 px-5 mb-2  placeholder:text-sm placeholder:font-dm bg-white"
                   ></textarea>
                 </div>
                 <Flex className="justify-center w-full">

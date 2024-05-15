@@ -1,7 +1,6 @@
-import React from "react";
 import Container from "../common/Container";
 import Flex from "../common/Flex";
-import List from "../common/List";
+
 import Image from "../common/Image";
 
 import Man from "../../assets/git.png";
@@ -13,9 +12,7 @@ import { Link } from "react-scroll";
 
 function Footer() {
   return (
-    <section
-      className={`py-[60px]  px-4 xl:px-0 bg-[#1D2D44]`}
-    >
+    <section className={`py-[60px]  px-4 xl:px-0 bg-[#1D2D44] dark:bg-secondary`}>
       <Container>
         <Flex className="justify-center flex-wrap gap-y-10">
           <div className="md:w-3/12 ">
