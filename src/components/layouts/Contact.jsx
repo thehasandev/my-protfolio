@@ -22,18 +22,15 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_n80v8is",
-        "template_279n7dl",
-        form.current,
-        "zcRWr5eZJRMzTUoYT"
-      )
+      .sendForm("service_n80v8is", "template_58doal2", form.current, {
+        publicKey: "zcRWr5eZJRMzTUoYT",
+      })
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log(error.text);
+          console.log("FAILED...", error.text);
         }
       );
   };

@@ -241,18 +241,7 @@ function Navber() {
           </div>
 
           <div className={`w-[250px] flex justify-end items-center gap-x-5`}>
-            {/* <MdOutlineDarkMode
-              className="cursor-pointer text-secondary dark:text-white"
-              onClick={handleDark}
-              size={25}
-            />
-            <MdOutlineLightMode
-              className="cursor-pointer text-secondary dark:text-white"
-              onClick={handleLight}
-              size={25}
-            /> */}
             <label className="swap swap-rotate">
-              {/* this hidden checkbox controls the state */}
               <input type="checkbox" />
 
               <div
@@ -286,7 +275,7 @@ function Navber() {
               duration={2000}
             >
               <button
-                className={`hidden md:block border bg-secondary text-white hover:bg-transparent hover:text-secondary hover:border-secondary  duration-500 px-6  rounded-[5px] py-2 font-dm font-medium text-base border-secondary`}
+                className={`hidden md:block border bg-secondary text-white hover:bg-transparent hover:text-secondary hover:border-secondary  duration-500 px-6  rounded-[5px] py-2 font-dm font-medium text-base border-secondary dark:hover:text-white dark:hover:border-white`}
               >
                 Contract
               </button>
