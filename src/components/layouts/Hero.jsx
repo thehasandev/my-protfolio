@@ -56,15 +56,15 @@ function Hero() {
                   </p>
                 </div>
               </Link>
-              <Link to="https://www.linkedin.com/in/hasanmia/">
+              <Link to="https://www.linkedin.com/in/thehasandev/">
                 <div
-                  className={`duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center bg-secondary hover:bg-primary gap-x-2 `}
+                  className={`duration-300 w-[120px] px-2 rounded-[2px] py-2 flex items-center justify-center bg-secondary hover:bg-primary gap-x-2 `}
                 >
                   <BiLogoLinkedinSquare size={25} className="text-white" />
                   <p
                     className={`font-dm font-medium text-lg inline-block  text-center text-white`}
                   >
-                    Linkin
+                    Linkedin
                   </p>
                 </div>
               </Link>
