@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import Container from "../common/Container";
 
 import protfolioData from "../Data/protfolio";
@@ -6,7 +6,6 @@ import protfolioData from "../Data/protfolio";
 import Flex from "../common/Flex";
 import Image from "../common/Image";
 import { Link } from "react-router-dom";
-
 
 function Protfolio() {
   const [data, setData] = useState(protfolioData);
@@ -34,9 +33,9 @@ function Protfolio() {
         <ul className="flex  justify-center md:gap-x-10 gap-x-2 flex-wrap">
           <li
             onClick={() => {
-              handleSubmit("Html Css");
+              handleSubmit("HtmlCss");
             }}
-            className="font-dm text-base hover:bg-secondary hover:text-white dark:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+            className="font-dm text-black text-base hover:bg-secondary hover:text-white dark:text-white  px-2 md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             Html Css
           </li>
@@ -50,7 +49,7 @@ function Protfolio() {
           </li>
           <li
             onClick={() => {
-              handleSubmit("Taillwind Css");
+              handleSubmit("TaillwindCss");
             }}
             className="font-dm text-base hover:bg-secondary hover:text-white dark:text-white text-secondary  px-2  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
@@ -66,11 +65,19 @@ function Protfolio() {
           </li>
           <li
             onClick={() => {
-              handleSubmit("React Js");
+              handleSubmit("ReactJs");
             }}
             className="font-dm text-base hover:bg-secondary hover:text-white px-2 dark:text-white text-secondary  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
           >
             React Js
+          </li>
+          <li
+            onClick={() => {
+              handleSubmit("NextJs");
+            }}
+            className="font-dm text-base hover:bg-secondary hover:text-white px-2 dark:text-white text-secondary  md:px-3 cursor-pointer  py-1 duration-300 rounded-[5px]"
+          >
+            Next Js
           </li>
           <li
             onClick={() => {
@@ -134,12 +141,14 @@ function Protfolio() {
                             ? "https://firebase-todo-murex.vercel.app/"
                             : title == "tonix"
                             ? "https://tronix-ecommarce.netlify.app"
+                            : title === "super"
+                            ? "https://super-food.vercel.app/"
                             : "/"
                         }
                       >
                         <Image
                           src={item.url}
-                          className="rounded-[10px] group-hover:scale-110 duration-500"
+                          className="rounded-[10px] w-full h-[200px] bg-cover aspect-video group-hover:scale-110 duration-500"
                         />
                       </Link>
                       <div className="w-full h-full bg-black/25 group-hover:top-[100%] top-0 left-0 absolute"></div>
