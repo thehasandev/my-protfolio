@@ -8,6 +8,14 @@ const data = [
       "Website where you can get famous citation APIs collected by different RestApis and create your own citations by setting by your personal preferences.",
   },
   {
+    projectName: "Super Food",
+    projectImageUrl: "./images/superFood.png",
+    projectCodeLink: "https://github.com/thehasandev/superfood",
+    projectLiveLink: "https://super-food.vercel.app/",
+    projectDescription:
+      "A modern food delivery platform built with React and Next.js for a seamless and dynamic user experience, combined with a robust Node.js backend. Super Food offers a responsive and efficient interface for browsing, ordering, and managing food delivery, optimized for performance and scalability.",
+  },
+  {
     projectName: "Orebi Ecommarce",
     projectImageUrl: "./images/orebiBanner.png",
     projectCodeLink: "https://github.com/thehasandev/ecommerce-orebi.git",
